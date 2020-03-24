@@ -64,7 +64,8 @@
   display: block;
   text-align: center;
   background: url("/testimonial-background3.cbe0bd5a.jpg");
-  background-size: cover; }
+  background-size: cover;
+  background-position: center; }
   #testimonials .ui.fluid.card {
     box-shadow: none;
     -webkit-box-shadow: none;
