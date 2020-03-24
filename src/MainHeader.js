@@ -36,7 +36,7 @@ class MainHeader extends React.Component {
           </Link>
           <Link to="/">
             <Menu.Item
-              name="friends"
+              name="contact"
               active={activeItem === "contact"}
               onClick={this.handleMenuItemClick}
             />

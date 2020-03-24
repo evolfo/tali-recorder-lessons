@@ -9,16 +9,17 @@ class HomePage extends React.Component {
     return (
       <>
         <Grid id="main-background">
-          <GridColumn tablet={16} computer={8}></GridColumn>
+          <GridColumn tablet={0} computer={8}></GridColumn>
           <GridColumn tablet={16} computer={8} className="main-about-text">
-            <Header className="centered-text">Learn Recorder with Tali</Header>
+            <Header className="centered-text">
+              Learn Recorder with&nbsp;Tali!
+            </Header>
             <p className="centered-text">
-              Tali Rubinstein is a NYC based recorder player, singer and
-              composer (for a Latin Grammy Award winning album). Originating in
-              classical music and delving into jazz, pop and R&B music, Tali has
-              been exploring and challenging the boundaries of this ancient
-              baroque instrument, creating her own unique voice in today's music
-              scene.
+              Ever wondered – “Can I actually play that on a&nbsp;recorder?”
+            </p>
+            <p className="centered-text">
+              The answer is – yes. NYC based Award-winning recorder player Tali
+              Rubinstein will teach you&nbsp;how.
             </p>
             <Link to="/book-lesson">
               <Button secondary>Book a Lesson Now</Button>
@@ -58,7 +59,7 @@ class HomePage extends React.Component {
           <Header className="main-about-text testimonials-header">
             Testimonials
           </Header>
-          <GridColumn computer={12} tablet={16}>
+          <GridColumn className="testimonials-text" computer={12} tablet={16}>
             <Carousel
               elements={elements}
               animation="slide left"

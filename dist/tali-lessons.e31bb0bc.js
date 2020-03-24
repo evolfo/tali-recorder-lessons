@@ -76170,7 +76170,7 @@ var MainHeader = /*#__PURE__*/function (_React$Component) {
       })), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
         to: "/"
       }, /*#__PURE__*/_react.default.createElement(_semanticUiReact.Menu.Item, {
-        name: "friends",
+        name: "contact",
         active: activeItem === "contact",
         onClick: this.handleMenuItemClick
       })), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
@@ -77621,7 +77621,7 @@ var HomePage = /*#__PURE__*/function (_React$Component) {
       return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(_semanticUiReact.Grid, {
         id: "main-background"
       }, /*#__PURE__*/_react.default.createElement(_semanticUiReact.GridColumn, {
-        tablet: 16,
+        tablet: 0,
         computer: 8
       }), /*#__PURE__*/_react.default.createElement(_semanticUiReact.GridColumn, {
         tablet: 16,
@@ -77629,9 +77629,11 @@ var HomePage = /*#__PURE__*/function (_React$Component) {
         className: "main-about-text"
       }, /*#__PURE__*/_react.default.createElement(_semanticUiReact.Header, {
         className: "centered-text"
-      }, "Learn Recorder with Tali"), /*#__PURE__*/_react.default.createElement("p", {
+      }, "Learn Recorder with\xA0Tali!"), /*#__PURE__*/_react.default.createElement("p", {
         className: "centered-text"
-      }, "Tali Rubinstein is a NYC based recorder player, singer and composer (for a Latin Grammy Award winning album). Originating in classical music and delving into jazz, pop and R&B music, Tali has been exploring and challenging the boundaries of this ancient baroque instrument, creating her own unique voice in today's music scene."), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
+      }, "Ever wondered \u2013 \u201CCan I actually play that on a\xA0recorder?\u201D"), /*#__PURE__*/_react.default.createElement("p", {
+        className: "centered-text"
+      }, "The answer is \u2013 yes. NYC based Award-winning recorder player Tali Rubinstein will teach you\xA0how."), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
         to: "/book-lesson"
       }, /*#__PURE__*/_react.default.createElement(_semanticUiReact.Button, {
         secondary: true
@@ -77669,6 +77671,7 @@ var HomePage = /*#__PURE__*/function (_React$Component) {
       }, /*#__PURE__*/_react.default.createElement(_semanticUiReact.Header, {
         className: "main-about-text testimonials-header"
       }, "Testimonials"), /*#__PURE__*/_react.default.createElement(_semanticUiReact.GridColumn, {
+        className: "testimonials-text",
         computer: 12,
         tablet: 16
       }, /*#__PURE__*/_react.default.createElement(_semanticUiCarouselReact.default, {
@@ -77685,7 +77688,9 @@ var HomePage = /*#__PURE__*/function (_React$Component) {
 
 var _default = HomePage;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","semantic-ui-react":"node_modules/semantic-ui-react/dist/es/index.js","semantic-ui-carousel-react":"node_modules/semantic-ui-carousel-react/dist/index.js","react-router-dom":"node_modules/react-router-dom/esm/react-router-dom.js","../utilities/carousel-elements":"src/utilities/carousel-elements.js"}],"src/containers/About.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","semantic-ui-react":"node_modules/semantic-ui-react/dist/es/index.js","semantic-ui-carousel-react":"node_modules/semantic-ui-carousel-react/dist/index.js","react-router-dom":"node_modules/react-router-dom/esm/react-router-dom.js","../utilities/carousel-elements":"src/utilities/carousel-elements.js"}],"img/about-img.jpg":[function(require,module,exports) {
+module.exports = "/about-img.a6fcbfe6.jpg";
+},{}],"src/containers/About.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -77695,15 +77700,33 @@ exports.default = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
+var _semanticUiReact = require("semantic-ui-react");
+
+var _aboutImg = _interopRequireDefault(require("../../img/about-img.jpg"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var About = function About() {
-  return /*#__PURE__*/_react.default.createElement("p", null, "aBOUT");
+  return /*#__PURE__*/_react.default.createElement(_semanticUiReact.Grid, {
+    centered: true,
+    id: "about"
+  }, /*#__PURE__*/_react.default.createElement(_semanticUiReact.GridColumn, {
+    tablet: 16,
+    computer: 8
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    id: "about-card"
+  }, /*#__PURE__*/_react.default.createElement(_semanticUiReact.Image, {
+    src: _aboutImg.default
+  }))), /*#__PURE__*/_react.default.createElement(_semanticUiReact.GridColumn, {
+    tablet: 16,
+    computer: 8,
+    className: "about-text"
+  }, /*#__PURE__*/_react.default.createElement("p", null, "Like most kids, Tali began playing the recorder in 2nd grade. Unlike most, she never stopped. A student of Bracha Kol, Tali was professionally trained in classical baroque and renaissance music from a young age. She studied in prestigious music institutions in Israel (Thelma Yellin High School of the Arts, Rimon School) and later received a full tuition scholarship to attend the Berklee College of music in Boston and became the first recorder player ever to study there. She was chosen to represent Berklee at the John F. Kennedy Center for the Performing Arts, and upon graduation, received the W.S. Kenney award for outstanding achievement. Tali has established herself in jazz, pop and R&B music, exploring and challenging the boundaries of this ancient baroque instrument."), /*#__PURE__*/_react.default.createElement("p", null, "Tali has taught private lessons and workshops all around the world, for all levels of recorder players. While in Israel, Tali taught private recorder lessons for kids for two years at the Neve Sharet Conservatory in Tel Aviv, and since moving to the US she\u2019s been teaching privately in NYC for over five years."), /*#__PURE__*/_react.default.createElement("p", null, "Tali has given workshops in the US (including a seminar for recorder teachers at part of Carnegie Hall\u2019s Link Up program, as well as a workshop at Carnegie Hall\u2019s Studio 57, and a workshop for elementary school students at The Ramaz School), Germany (a three-day seminar for recorder majors at Frankfurt University of Music and Performing Arts), Israel (at the Israel International Recorder Festival), The Philippines (workshops at the UP College of Music, Philippine Women\u2019s University, University of Santo Tomas and New Era University), Taiwan (at Tsing Hua University), Uruguay (a free workshop for teens as part of Jazz a la Calle festival) and Spain (a workshop for elementary school students at Colegio Decroly).")));
 };
 
 var _default = About;
 exports.default = _default;
-},{"react":"node_modules/react/index.js"}],"src/containers/BookLesson.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","semantic-ui-react":"node_modules/semantic-ui-react/dist/es/index.js","../../img/about-img.jpg":"img/about-img.jpg"}],"src/containers/BookLesson.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -77717,63 +77740,19 @@ var _semanticUiReact = require("semantic-ui-react");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _createSuper(Derived) { return function () { var Super = _getPrototypeOf(Derived), result; if (_isNativeReflectConstruct()) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-var BookLesson = /*#__PURE__*/function (_React$Component) {
-  _inherits(BookLesson, _React$Component);
-
-  var _super = _createSuper(BookLesson);
-
-  function BookLesson() {
-    _classCallCheck(this, BookLesson);
-
-    return _super.apply(this, arguments);
-  }
-
-  _createClass(BookLesson, [{
-    key: "componentDidUpdate",
-    value: function componentDidUpdate() {
-      debugger;
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      return /*#__PURE__*/_react.default.createElement(_semanticUiReact.Grid, {
-        id: "book-lesson"
-      }, /*#__PURE__*/_react.default.createElement(_semanticUiReact.GridColumn, {
-        width: 16
-      }, /*#__PURE__*/_react.default.createElement("iframe", {
-        src: "https://talirecorder.setmore.com",
-        scrolling: "no",
-        width: "100%",
-        height: "100%",
-        frameborder: "0"
-      })));
-    }
-  }]);
-
-  return BookLesson;
-}(_react.default.Component);
+var BookLesson = function BookLesson() {
+  return /*#__PURE__*/_react.default.createElement(_semanticUiReact.Grid, {
+    id: "book-lesson"
+  }, /*#__PURE__*/_react.default.createElement(_semanticUiReact.GridColumn, {
+    width: 16
+  }, /*#__PURE__*/_react.default.createElement("iframe", {
+    src: "https://talirecorder.setmore.com",
+    scrolling: "no",
+    width: "100%",
+    height: "100%",
+    frameborder: "0"
+  })));
+};
 
 var _default = BookLesson;
 exports.default = _default;
@@ -77813,7 +77792,53 @@ var Router = function Router() {
 
 var _default = Router;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","react-router-dom":"node_modules/react-router-dom/esm/react-router-dom.js","./containers/HomePage":"src/containers/HomePage.js","./containers/About":"src/containers/About.js","./containers/BookLesson":"src/containers/BookLesson.js"}],"src/App.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","react-router-dom":"node_modules/react-router-dom/esm/react-router-dom.js","./containers/HomePage":"src/containers/HomePage.js","./containers/About":"src/containers/About.js","./containers/BookLesson":"src/containers/BookLesson.js"}],"src/Footer.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _semanticUiReact = require("semantic-ui-react");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Footer = function Footer() {
+  return /*#__PURE__*/_react.default.createElement(_semanticUiReact.Segment, {
+    textAlign: "center",
+    id: "footer",
+    inverted: true
+  }, /*#__PURE__*/_react.default.createElement(_semanticUiReact.List, {
+    horizontal: true
+  }, /*#__PURE__*/_react.default.createElement(_semanticUiReact.List.Item, null, /*#__PURE__*/_react.default.createElement(_semanticUiReact.List.Content, null, /*#__PURE__*/_react.default.createElement(_semanticUiReact.Icon, {
+    circular: true,
+    name: "facebook",
+    size: "big"
+  }))), /*#__PURE__*/_react.default.createElement(_semanticUiReact.List.Item, null, /*#__PURE__*/_react.default.createElement(_semanticUiReact.List.Content, null, /*#__PURE__*/_react.default.createElement(_semanticUiReact.Icon, {
+    circular: true,
+    name: "twitter",
+    size: "big"
+  }))), /*#__PURE__*/_react.default.createElement(_semanticUiReact.List.Item, null, /*#__PURE__*/_react.default.createElement(_semanticUiReact.List.Content, null, /*#__PURE__*/_react.default.createElement(_semanticUiReact.Icon, {
+    circular: true,
+    name: "instagram",
+    size: "big"
+  }))), /*#__PURE__*/_react.default.createElement(_semanticUiReact.List.Item, null, /*#__PURE__*/_react.default.createElement(_semanticUiReact.List.Content, null, /*#__PURE__*/_react.default.createElement(_semanticUiReact.Icon, {
+    circular: true,
+    name: "spotify",
+    size: "big"
+  }))), /*#__PURE__*/_react.default.createElement(_semanticUiReact.List.Item, null, /*#__PURE__*/_react.default.createElement(_semanticUiReact.List.Content, null, /*#__PURE__*/_react.default.createElement(_semanticUiReact.Icon, {
+    circular: true,
+    name: "youtube",
+    size: "big"
+  })))), /*#__PURE__*/_react.default.createElement(_semanticUiReact.Header, null, "Copyright \xA9 2020 Tali Rubinstein"));
+};
+
+var _default = Footer;
+exports.default = _default;
+},{"react":"node_modules/react/index.js","semantic-ui-react":"node_modules/semantic-ui-react/dist/es/index.js"}],"src/App.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -77829,15 +77854,17 @@ var _MainHeader = _interopRequireDefault(require("./MainHeader"));
 
 var _Router = _interopRequireDefault(require("./Router"));
 
+var _Footer = _interopRequireDefault(require("./Footer"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var App = function App() {
-  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(_MainHeader.default, null), /*#__PURE__*/_react.default.createElement(_Router.default, null));
+  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(_MainHeader.default, null), /*#__PURE__*/_react.default.createElement(_Router.default, null), /*#__PURE__*/_react.default.createElement(_Footer.default, null));
 };
 
 var _default = App;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","./App.scss":"src/App.scss","./MainHeader":"src/MainHeader.js","./Router":"src/Router.js"}],"index.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","./App.scss":"src/App.scss","./MainHeader":"src/MainHeader.js","./Router":"src/Router.js","./Footer":"src/Footer.js"}],"index.js":[function(require,module,exports) {
 "use strict";
 
 var _react = _interopRequireDefault(require("react"));
