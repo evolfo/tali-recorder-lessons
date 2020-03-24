@@ -1,0 +1,131 @@
+// Media breakpoints 
+ @mixin breakpoint($point) {
+   @if $point == desktop {
+     @media (max-width: 72em) { @content ; }
+  }
+   @else if $point == desktopMin {
+     @media (min-width: 72em) { @content ; }
+  }
+   @else if $point == big {
+     @media (max-width: 100em) { @content ; }
+  }
+   @else if $point == laptop {
+     @media (max-width: 60em) { @content ; }
+  }
+    @else if $point == laptopMin {
+     @media (min-width: 60em) { @content ; }
+  }
+    @else if $point == tablet {
+     @media (max-width: 50em) { @content ; }
+  }
+   @else if $point == phablet {
+     @media (min-width: 37.5em)  { @content ; }
+  }
+  @else if $point == mobileonly {
+     @media (max-width: 37.5em)  { @content ; }
+  }
+}
+
+#app {
+    .main-about-text {
+        font-size: 3rem;
+        padding-bottom: 1.8rem;
+    }
+
+    .video-header {
+        color: white;
+    }
+}
+
+// HEADER
+
+#app .navbar {
+    border-radius: 0;
+    background: #2a5a8a;
+    z-index: 10;
+
+    img {
+        max-width: 400px;
+    }
+
+    .menu {
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header {
+        text-align: center;
+        color: white;
+        margin-top: 0;
+        font-weight: 100;
+        font-size: 1.5rem;
+    }
+}
+
+// HOMEPAGE
+
+#main-background {
+    background: url('/img/background1.jpg');
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+    background-position-x: -17rem;
+
+    .main-about-text {
+        padding: 8rem;
+        padding-top: 11rem;
+
+        .header {
+            font-size: 3.1rem;
+            line-height: 3.5rem;
+        }
+        p {
+            font-size: 1.3rem;
+        }
+    }
+
+    #about-me-front {
+        font-size: 3rem;
+        font-weight: 900;
+    }
+}
+
+#tutorial-videos {
+    padding-left: 8rem;
+    padding-right: 8rem;
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+    display: block;
+    text-align: center;
+    background: #2a5a8a;
+}
+
+// BOOKING LESSONS
+
+#book-lesson {
+    height: 100vh;
+    margin-top: -6.3rem;
+
+    @include breakpoint(mobileonly) {
+        margin-top: -1.9rem;
+    }
+}
+
+// RESPONSIVE IFRAME
+
+.iframe-container {
+  overflow: hidden;
+  padding-top: 56.25%;
+  position: relative;
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 0;
+    width: 100%;
+    height: 100%;
+  }
+} 
