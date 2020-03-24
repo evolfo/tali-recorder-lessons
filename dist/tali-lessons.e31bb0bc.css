@@ -1,3 +1,8 @@
+@media print {
+  .main-about-text {
+    orphans: 3;
+    widows: 3; } }
+
 #app .main-about-text {
   font-size: 3rem;
   padding-bottom: 1.8rem; }
@@ -33,8 +38,9 @@
     padding: 8rem;
     padding-top: 11rem; }
     #main-background .main-about-text .header {
-      font-size: 3.1rem;
-      line-height: 3.5rem; }
+      font-size: 2.9rem;
+      line-height: 3.5rem;
+      widows: 2; }
     #main-background .main-about-text p {
       font-size: 1.3rem; }
   #main-background #about-me-front {
@@ -49,6 +55,20 @@
   display: block;
   text-align: center;
   background: #2a5a8a; }
+
+#testimonials {
+  padding-left: 8rem;
+  padding-right: 8rem;
+  padding-bottom: 4rem;
+  padding-top: 4rem;
+  display: block;
+  text-align: center;
+  background: url("/testimonial-background3.cbe0bd5a.jpg");
+  background-size: cover; }
+  #testimonials .ui.fluid.card {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    background: transparent; }
 
 #book-lesson {
   height: 100vh;

@@ -26,6 +26,13 @@
   }
 }
 
+@media print {
+  .main-about-text {
+    orphans: 3;
+    widows: 3;
+  }
+}
+
 #app {
     .main-about-text {
         font-size: 3rem;
@@ -78,8 +85,9 @@
         padding-top: 11rem;
 
         .header {
-            font-size: 3.1rem;
+            font-size: 2.9rem;
             line-height: 3.5rem;
+            widows: 2;
         }
         p {
             font-size: 1.3rem;
@@ -100,6 +108,23 @@
     display: block;
     text-align: center;
     background: #2a5a8a;
+}
+
+#testimonials {
+    padding-left: 8rem;
+    padding-right: 8rem;
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+    display: block;
+    text-align: center;
+    background: url('/img/testimonial-background3.jpg');
+    background-size: cover;
+
+    .ui.fluid.card {
+        box-shadow: none;
+        -webkit-box-shadow: none;
+        background: transparent;
+    }
 }
 
 // BOOKING LESSONS
