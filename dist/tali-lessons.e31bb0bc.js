@@ -77991,7 +77991,9 @@ var _Footer = _interopRequireDefault(require("./Footer"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var App = function App() {
-  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(_MainHeader.default, null), /*#__PURE__*/_react.default.createElement(_Router.default, null), /*#__PURE__*/_react.default.createElement(_Footer.default, null));
+  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(_MainHeader.default, null), /*#__PURE__*/_react.default.createElement("div", {
+    className: "big-container"
+  }, /*#__PURE__*/_react.default.createElement(_Router.default, null)), /*#__PURE__*/_react.default.createElement(_Footer.default, null));
 };
 
 var _default = App;
@@ -78040,7 +78042,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50046" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52408" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
