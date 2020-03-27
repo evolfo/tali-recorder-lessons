@@ -1,5 +1,6 @@
 import React from 'react'
 import { Segment, List, Icon, Header } from "semantic-ui-react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -7,27 +8,22 @@ const Footer = () => {
       <List horizontal>
         <List.Item>
           <List.Content>
-            <Icon circular name="facebook" size="big" />
+            <Link to="https://www.facebook.com/talirubinsteinrecorder/"><Icon circular name="facebook" size="big" /></Link>
           </List.Content>
         </List.Item>
         <List.Item>
           <List.Content>
-            <Icon circular name="twitter" size="big" />
+            <Link to="https://twitter.com/TaliRubinstein"><Icon circular name="twitter" size="big" /></Link>
           </List.Content>
         </List.Item>
         <List.Item>
           <List.Content>
-            <Icon circular name="instagram" size="big" />
+            <Link to="https://www.instagram.com/talirubinstein/"><Icon circular name="instagram" size="big" /></Link>
           </List.Content>
         </List.Item>
         <List.Item>
           <List.Content>
-            <Icon circular name="spotify" size="big" />
-          </List.Content>
-        </List.Item>
-        <List.Item>
-          <List.Content>
-            <Icon circular name="youtube" size="big" />
+            <Link to="https://www.youtube.com/user/TaliRubin"><Icon circular name="youtube" size="big" /></Link>
           </List.Content>
         </List.Item>
       </List>

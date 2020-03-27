@@ -76131,8 +76131,15 @@ var MainHeader = /*#__PURE__*/function (_React$Component) {
 
     _defineProperty(_assertThisInitialized(_this), "handleMenuItemClick", function (e, _ref) {
       var name = _ref.name;
-      return _this.setState({
+
+      _this.setState({
         activeItem: name
+      });
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "handleHeaderImgClick", function (e) {
+      _this.setState({
+        activeItem: "home"
       });
     });
 
@@ -76143,6 +76150,7 @@ var MainHeader = /*#__PURE__*/function (_React$Component) {
     key: "render",
     value: function render() {
       var activeItem = this.state.activeItem;
+      console.log(activeItem);
       return /*#__PURE__*/_react.default.createElement(_semanticUiReact.Segment, {
         className: "navbar",
         inverted: true
@@ -76150,10 +76158,12 @@ var MainHeader = /*#__PURE__*/function (_React$Component) {
         inverted: true,
         pointing: true,
         secondary: true
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "hide-header"
       }, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
         to: "/"
       }, /*#__PURE__*/_react.default.createElement(_semanticUiReact.Menu.Item, {
-        name: "Home",
+        name: "home",
         active: activeItem === "home",
         onClick: this.handleMenuItemClick
       })), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
@@ -76165,10 +76175,13 @@ var MainHeader = /*#__PURE__*/function (_React$Component) {
       })), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
         to: "/"
       }, /*#__PURE__*/_react.default.createElement(_semanticUiReact.Image, {
+        name: "home",
+        active: activeItem === "home",
+        onClick: this.handleHeaderImgClick,
         src: _talilogo.default,
         centered: true
       })), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
-        to: "/"
+        to: "/contact"
       }, /*#__PURE__*/_react.default.createElement(_semanticUiReact.Menu.Item, {
         name: "contact",
         active: activeItem === "contact",
@@ -76176,8 +76189,38 @@ var MainHeader = /*#__PURE__*/function (_React$Component) {
       })), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
         to: "/book-lesson"
       }, /*#__PURE__*/_react.default.createElement(_semanticUiReact.Button, {
-        primary: true
-      }, "Book Now"))));
+        primary: true,
+        name: "book-lesson",
+        onClick: this.handleMenuItemClick
+      }, "Book Now"))), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
+        to: "/"
+      }, /*#__PURE__*/_react.default.createElement(_semanticUiReact.Image, {
+        className: "header-burger",
+        name: "home",
+        active: activeItem === "home",
+        onClick: this.handleHeaderImgClick,
+        src: _talilogo.default,
+        centered: true
+      })), /*#__PURE__*/_react.default.createElement(_semanticUiReact.Dropdown, {
+        className: "header-burger",
+        icon: "bars"
+      }, /*#__PURE__*/_react.default.createElement(_semanticUiReact.DropdownMenu, null, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
+        to: "/"
+      }, /*#__PURE__*/_react.default.createElement(_semanticUiReact.DropdownItem, {
+        text: "Home"
+      })), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
+        to: "/about"
+      }, /*#__PURE__*/_react.default.createElement(_semanticUiReact.DropdownItem, {
+        text: "About"
+      })), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
+        to: "/contact"
+      }, /*#__PURE__*/_react.default.createElement(_semanticUiReact.DropdownItem, {
+        text: "Contact"
+      })), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
+        to: "/book-lesson"
+      }, /*#__PURE__*/_react.default.createElement(_semanticUiReact.DropdownItem, {
+        text: "Book a Lesson"
+      }))))));
     }
   }]);
 
@@ -77621,6 +77664,7 @@ var HomePage = /*#__PURE__*/function (_React$Component) {
       return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(_semanticUiReact.Grid, {
         id: "main-background"
       }, /*#__PURE__*/_react.default.createElement(_semanticUiReact.GridColumn, {
+        className: "tablet-display-none",
         tablet: 0,
         computer: 8
       }), /*#__PURE__*/_react.default.createElement(_semanticUiReact.GridColumn, {
@@ -77690,6 +77734,10 @@ var _default = HomePage;
 exports.default = _default;
 },{"react":"node_modules/react/index.js","semantic-ui-react":"node_modules/semantic-ui-react/dist/es/index.js","semantic-ui-carousel-react":"node_modules/semantic-ui-carousel-react/dist/index.js","react-router-dom":"node_modules/react-router-dom/esm/react-router-dom.js","../utilities/carousel-elements":"src/utilities/carousel-elements.js"}],"img/about-img.jpg":[function(require,module,exports) {
 module.exports = "/about-img.a6fcbfe6.jpg";
+},{}],"img/about-img2.jpg":[function(require,module,exports) {
+module.exports = "/about-img2.4b5453a1.jpg";
+},{}],"img/placeholder-vid.jpg":[function(require,module,exports) {
+module.exports = "/placeholder-vid.3ea86051.jpg";
 },{}],"src/containers/About.js":[function(require,module,exports) {
 "use strict";
 
@@ -77704,29 +77752,46 @@ var _semanticUiReact = require("semantic-ui-react");
 
 var _aboutImg = _interopRequireDefault(require("../../img/about-img.jpg"));
 
+var _aboutImg2 = _interopRequireDefault(require("../../img/about-img2.jpg"));
+
+var _placeholderVid = _interopRequireDefault(require("../../img/placeholder-vid.jpg"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var About = function About() {
-  return /*#__PURE__*/_react.default.createElement(_semanticUiReact.Grid, {
+  return /*#__PURE__*/_react.default.createElement("div", {
+    id: "about-wrapper"
+  }, /*#__PURE__*/_react.default.createElement(_semanticUiReact.Grid, {
     centered: true,
     id: "about"
   }, /*#__PURE__*/_react.default.createElement(_semanticUiReact.GridColumn, {
+    stretched: "true",
     tablet: 16,
-    computer: 8
+    computer: 9,
+    className: "about-text"
+  }, /*#__PURE__*/_react.default.createElement(_semanticUiReact.Header, null, "About Tali"), /*#__PURE__*/_react.default.createElement("p", null, "Like most kids, Tali began playing the recorder in 2nd grade. Unlike most, she never stopped."), /*#__PURE__*/_react.default.createElement("p", null, "Tali was professionally trained in classical baroque and renaissance music from a young age. She studied in prestigious music schools in Israel (Thelma Yellin High School of the Arts, Rimon School) and received a full scholarship to attend Berklee College of Music in Boston, where she became the first recorder player to ever study there. Winning numerous awards throughout her career, Tali has established herself in jazz, pop and R&B music, exploring and challenging the boundaries of this ancient baroque instrument."), /*#__PURE__*/_react.default.createElement("p", null, "Tali has taught private lessons and workshops all around the world, for all levels of recorder players. While in Israel, Tali taught for two years at the Neve Sharet Conservatory in Tel Aviv, and since moving to the US she\u2019s been teaching privately in NYC for over five years."), /*#__PURE__*/_react.default.createElement("p", null, "Tali has given workshops in the US (Carnegie Hall), Germany (Frankfurt University of Music and Performing Arts), Israel (Israel International Recorder Festival), The Philippines (UP College of Music, Philippine Women\u2019s University, University of Santo Tomas and New Era University), Taiwan (Tsing Hua University), Uruguay (Jazz a la Calle festival) and Spain (Colegio Decroly).")), /*#__PURE__*/_react.default.createElement(_semanticUiReact.GridColumn, {
+    stretched: "true",
+    className: "about-img",
+    tablet: 16,
+    computer: 7
   }, /*#__PURE__*/_react.default.createElement("div", {
     id: "about-card"
   }, /*#__PURE__*/_react.default.createElement(_semanticUiReact.Image, {
     src: _aboutImg.default
-  }))), /*#__PURE__*/_react.default.createElement(_semanticUiReact.GridColumn, {
-    tablet: 16,
-    computer: 8,
-    className: "about-text"
-  }, /*#__PURE__*/_react.default.createElement("p", null, "Like most kids, Tali began playing the recorder in 2nd grade. Unlike most, she never stopped. A student of Bracha Kol, Tali was professionally trained in classical baroque and renaissance music from a young age. She studied in prestigious music institutions in Israel (Thelma Yellin High School of the Arts, Rimon School) and later received a full tuition scholarship to attend the Berklee College of music in Boston and became the first recorder player ever to study there. She was chosen to represent Berklee at the John F. Kennedy Center for the Performing Arts, and upon graduation, received the W.S. Kenney award for outstanding achievement. Tali has established herself in jazz, pop and R&B music, exploring and challenging the boundaries of this ancient baroque instrument."), /*#__PURE__*/_react.default.createElement("p", null, "Tali has taught private lessons and workshops all around the world, for all levels of recorder players. While in Israel, Tali taught private recorder lessons for kids for two years at the Neve Sharet Conservatory in Tel Aviv, and since moving to the US she\u2019s been teaching privately in NYC for over five years."), /*#__PURE__*/_react.default.createElement("p", null, "Tali has given workshops in the US (including a seminar for recorder teachers at part of Carnegie Hall\u2019s Link Up program, as well as a workshop at Carnegie Hall\u2019s Studio 57, and a workshop for elementary school students at The Ramaz School), Germany (a three-day seminar for recorder majors at Frankfurt University of Music and Performing Arts), Israel (at the Israel International Recorder Festival), The Philippines (workshops at the UP College of Music, Philippine Women\u2019s University, University of Santo Tomas and New Era University), Taiwan (at Tsing Hua University), Uruguay (a free workshop for teens as part of Jazz a la Calle festival) and Spain (a workshop for elementary school students at Colegio Decroly).")));
+  }), /*#__PURE__*/_react.default.createElement(_semanticUiReact.Image, {
+    src: _aboutImg2.default
+  })))), /*#__PURE__*/_react.default.createElement(_semanticUiReact.Container, {
+    className: "about-vid"
+  }, /*#__PURE__*/_react.default.createElement(_semanticUiReact.Embed, {
+    id: "lMFN3UKNBh8",
+    placeholder: _placeholderVid.default,
+    source: "youtube"
+  })));
 };
 
 var _default = About;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","semantic-ui-react":"node_modules/semantic-ui-react/dist/es/index.js","../../img/about-img.jpg":"img/about-img.jpg"}],"src/containers/BookLesson.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","semantic-ui-react":"node_modules/semantic-ui-react/dist/es/index.js","../../img/about-img.jpg":"img/about-img.jpg","../../img/about-img2.jpg":"img/about-img2.jpg","../../img/placeholder-vid.jpg":"img/placeholder-vid.jpg"}],"src/containers/BookLesson.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -77756,6 +77821,80 @@ var BookLesson = function BookLesson() {
 
 var _default = BookLesson;
 exports.default = _default;
+},{"react":"node_modules/react/index.js","semantic-ui-react":"node_modules/semantic-ui-react/dist/es/index.js"}],"src/containers/Contact.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireWildcard(require("react"));
+
+var _semanticUiReact = require("semantic-ui-react");
+
+function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(n); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+var Contact = function Contact() {
+  var _useState = (0, _react.useState)(''),
+      _useState2 = _slicedToArray(_useState, 2),
+      email = _useState2[0],
+      setEmail = _useState2[1];
+
+  var _useState3 = (0, _react.useState)(''),
+      _useState4 = _slicedToArray(_useState3, 2),
+      name = _useState4[0],
+      setName = _useState4[1];
+
+  var _useState5 = (0, _react.useState)(''),
+      _useState6 = _slicedToArray(_useState5, 2),
+      comments = _useState6[0],
+      setComments = _useState6[1];
+
+  var handleSubmit = function handleSubmit(e) {
+    e.preventDefault();
+    fetch("https://hooks.zapier.com/hooks/catch/7045148/o1vyoou/", {
+      method: 'POST',
+      body: JSON.stringify({
+        email: email,
+        name: name,
+        comments: comments
+      })
+    });
+  };
+
+  var emailIsValidCheck = function emailIsValidCheck() {
+    var emailIsValid = email.match(/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i);
+    return emailIsValid;
+  };
+
+  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(_semanticUiReact.Container, {
+    id: "contact-wrapper"
+  }, /*#__PURE__*/_react.default.createElement("iframe", {
+    src: "https://docs.google.com/forms/d/e/1FAIpQLScxhYHXfEXjIkT0uO3VhZcGjNhOtQBUgvT_x0Pg-L4L2zk_2A/viewform?embedded=true",
+    frameborder: "0",
+    marginheight: "0",
+    scrolling: "no",
+    marginwidth: "0"
+  }, "Loading\u2026")));
+};
+
+var _default = Contact;
+exports.default = _default;
 },{"react":"node_modules/react/index.js","semantic-ui-react":"node_modules/semantic-ui-react/dist/es/index.js"}],"src/Router.js":[function(require,module,exports) {
 "use strict";
 
@@ -77774,6 +77913,8 @@ var _About = _interopRequireDefault(require("./containers/About"));
 
 var _BookLesson = _interopRequireDefault(require("./containers/BookLesson"));
 
+var _Contact = _interopRequireDefault(require("./containers/Contact"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var Router = function Router() {
@@ -77787,12 +77928,15 @@ var Router = function Router() {
   }), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
     path: "/book-lesson",
     component: _BookLesson.default
+  }), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
+    path: "/contact",
+    component: _Contact.default
   }));
 };
 
 var _default = Router;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","react-router-dom":"node_modules/react-router-dom/esm/react-router-dom.js","./containers/HomePage":"src/containers/HomePage.js","./containers/About":"src/containers/About.js","./containers/BookLesson":"src/containers/BookLesson.js"}],"src/Footer.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","react-router-dom":"node_modules/react-router-dom/esm/react-router-dom.js","./containers/HomePage":"src/containers/HomePage.js","./containers/About":"src/containers/About.js","./containers/BookLesson":"src/containers/BookLesson.js","./containers/Contact":"src/containers/Contact.js"}],"src/Footer.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -77804,6 +77948,8 @@ var _react = _interopRequireDefault(require("react"));
 
 var _semanticUiReact = require("semantic-ui-react");
 
+var _reactRouterDom = require("react-router-dom");
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var Footer = function Footer() {
@@ -77813,32 +77959,36 @@ var Footer = function Footer() {
     inverted: true
   }, /*#__PURE__*/_react.default.createElement(_semanticUiReact.List, {
     horizontal: true
-  }, /*#__PURE__*/_react.default.createElement(_semanticUiReact.List.Item, null, /*#__PURE__*/_react.default.createElement(_semanticUiReact.List.Content, null, /*#__PURE__*/_react.default.createElement(_semanticUiReact.Icon, {
+  }, /*#__PURE__*/_react.default.createElement(_semanticUiReact.List.Item, null, /*#__PURE__*/_react.default.createElement(_semanticUiReact.List.Content, null, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
+    to: "https://www.facebook.com/talirubinsteinrecorder/"
+  }, /*#__PURE__*/_react.default.createElement(_semanticUiReact.Icon, {
     circular: true,
     name: "facebook",
     size: "big"
-  }))), /*#__PURE__*/_react.default.createElement(_semanticUiReact.List.Item, null, /*#__PURE__*/_react.default.createElement(_semanticUiReact.List.Content, null, /*#__PURE__*/_react.default.createElement(_semanticUiReact.Icon, {
+  })))), /*#__PURE__*/_react.default.createElement(_semanticUiReact.List.Item, null, /*#__PURE__*/_react.default.createElement(_semanticUiReact.List.Content, null, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
+    to: "https://twitter.com/TaliRubinstein"
+  }, /*#__PURE__*/_react.default.createElement(_semanticUiReact.Icon, {
     circular: true,
     name: "twitter",
     size: "big"
-  }))), /*#__PURE__*/_react.default.createElement(_semanticUiReact.List.Item, null, /*#__PURE__*/_react.default.createElement(_semanticUiReact.List.Content, null, /*#__PURE__*/_react.default.createElement(_semanticUiReact.Icon, {
+  })))), /*#__PURE__*/_react.default.createElement(_semanticUiReact.List.Item, null, /*#__PURE__*/_react.default.createElement(_semanticUiReact.List.Content, null, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
+    to: "https://www.instagram.com/talirubinstein/"
+  }, /*#__PURE__*/_react.default.createElement(_semanticUiReact.Icon, {
     circular: true,
     name: "instagram",
     size: "big"
-  }))), /*#__PURE__*/_react.default.createElement(_semanticUiReact.List.Item, null, /*#__PURE__*/_react.default.createElement(_semanticUiReact.List.Content, null, /*#__PURE__*/_react.default.createElement(_semanticUiReact.Icon, {
-    circular: true,
-    name: "spotify",
-    size: "big"
-  }))), /*#__PURE__*/_react.default.createElement(_semanticUiReact.List.Item, null, /*#__PURE__*/_react.default.createElement(_semanticUiReact.List.Content, null, /*#__PURE__*/_react.default.createElement(_semanticUiReact.Icon, {
+  })))), /*#__PURE__*/_react.default.createElement(_semanticUiReact.List.Item, null, /*#__PURE__*/_react.default.createElement(_semanticUiReact.List.Content, null, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
+    to: "https://www.youtube.com/user/TaliRubin"
+  }, /*#__PURE__*/_react.default.createElement(_semanticUiReact.Icon, {
     circular: true,
     name: "youtube",
     size: "big"
-  })))), /*#__PURE__*/_react.default.createElement(_semanticUiReact.Header, null, "Copyright \xA9 2020 Tali Rubinstein"));
+  }))))), /*#__PURE__*/_react.default.createElement(_semanticUiReact.Header, null, "Copyright \xA9 2020 Tali Rubinstein"));
 };
 
 var _default = Footer;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","semantic-ui-react":"node_modules/semantic-ui-react/dist/es/index.js"}],"src/App.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","semantic-ui-react":"node_modules/semantic-ui-react/dist/es/index.js","react-router-dom":"node_modules/react-router-dom/esm/react-router-dom.js"}],"src/App.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -77908,7 +78058,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57919" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49560" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

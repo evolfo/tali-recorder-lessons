@@ -11,7 +11,14 @@
   z-index: 10; }
   #app .navbar img, #footer img {
     max-width: 400px; }
-  #app .navbar .menu, #footer .menu {
+    @media (max-width: 768px) {
+      #app .navbar img, #footer img {
+        max-width: 300px; } }
+  #app .navbar a, #footer a {
+    color: white;
+    padding-left: 1rem;
+    padding-right: 1rem; }
+  #app .navbar > .menu, #footer > .menu {
     border: none;
     display: flex;
     justify-content: center;
@@ -24,6 +31,44 @@
     font-size: 1.5rem; }
   #app .navbar .item > .content, #footer .item > .content {
     padding: 2rem; }
+    @media (max-width: 991px) {
+      #app .navbar .item > .content, #footer .item > .content {
+        padding: 0rem;
+        padding-bottom: 1rem; } }
+  #app .navbar .header-burger, #footer .header-burger {
+    display: none; }
+    @media (max-width: 991px) {
+      #app .navbar .header-burger, #footer .header-burger {
+        display: block; } }
+    #app .navbar .header-burger .item, #footer .header-burger .item {
+      font-size: 1.5rem;
+      color: #2a5a8a;
+      padding: 2rem; }
+    #app .navbar .header-burger .item:hover, #footer .header-burger .item:hover {
+      background: #2a5a8a;
+      color: white;
+      transition: .3s; }
+  #app .navbar div.header-burger, #footer div.header-burger {
+    position: absolute;
+    right: 1rem; }
+    #app .navbar div.header-burger .menu, #footer div.header-burger .menu {
+      left: -11.3rem;
+      border: none; }
+    #app .navbar div.header-burger i.icon, #footer div.header-burger i.icon {
+      font-size: 2rem; }
+  #app .navbar .hide-header, #footer .hide-header {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem; }
+    @media (max-width: 991px) {
+      #app .navbar .hide-header, #footer .hide-header {
+        display: none; } }
+    @media (max-width: 991px) {
+      #app .navbar .hide-header image, #footer .hide-header image {
+        display: inline-flex; } }
+
+#footer {
+  margin-top: 0; }
 
 #main-background {
   background: url("/background1.a781dd50.jpg");
@@ -93,19 +138,90 @@
   #book-lesson .sixteen.wide.column {
     padding-bottom: 6rem; }
 
-#about .about-text {
-  padding: 2rem;
-  padding-right: 4rem; }
+#about-wrapper .about-vid {
+  padding: 6rem; }
+  @media (max-width: 768px) {
+    #about-wrapper .about-vid {
+      padding: 3rem; } }
 
-#about #about-card {
+#about {
+  border: 58px solid #2a5a8a24; }
+  @media (max-width: 768px) {
+    #about {
+      border: 44px solid #2a5a8a24; } }
+  #about .header {
+    text-align: center;
+    font-size: 2.9rem;
+    flex-grow: 0;
+    -webkit-box-flex: 0;
+    -ms-flex-positive: 0; }
+  #about .about-text {
+    padding: 4rem; }
+    @media (max-width: 768px) {
+      #about .about-text {
+        padding: 3rem; } }
+  #about .column.about-img {
+    padding: 0rem; }
+  #about .about-text, #about .about-img {
+    box-shadow: 0px -1px 23px #2a5a89;
+    border: 36px inset #2a5a89; }
+    @media (max-width: 1239px) {
+      #about .about-text, #about .about-img {
+        width: 100% !important; } }
+  #about #about-card {
+    width: 100%;
+    padding: 0rem; }
+    @media (max-width: 1239px) {
+      #about #about-card {
+        width: 93%;
+        display: inline-flex; } }
+    @media (max-width: 768px) {
+      #about #about-card {
+        width: 100%;
+        display: block; } }
+  #about p:nth-child(2) {
+    font-size: 1.3rem;
+    font-weight: 900; }
+  #about img {
+    width: 100%; }
+  #about p {
+    font-size: 1.1rem;
+    flex-grow: 0;
+    -webkit-box-flex: 0;
+    -ms-flex-positive: 0; }
+
+#contact-wrapper iframe {
   width: 100%;
-  box-shadow: 0px -2px 11px #00000024;
-  padding: 2rem; }
+  height: 73vh; }
+  @media (max-width: 768px) {
+    #contact-wrapper iframe {
+      height: 81vh; } }
+
+#contact-wrapper #contact-form {
+  display: block;
+  padding: 6rem;
+  padding-top: 2rem; }
+
+#contact-wrapper .header {
+  text-align: center;
+  font-size: 2.9rem;
+  padding-top: 4rem;
+  padding-bottom: 0; }
+
+#contact-wrapper .field {
+  padding-top: 1rem; }
 
 .iframe-container {
   overflow: hidden;
   padding-top: 56.25%;
   position: relative; }
+  @media (max-width: 991px) {
+    .iframe-container {
+      width: 80%;
+      margin: 0 auto; } }
+  @media (max-width: 768px) {
+    .iframe-container {
+      width: 100%; } }
   .iframe-container iframe {
     position: absolute;
     top: 0;
@@ -113,6 +229,10 @@
     border: 0;
     width: 100%;
     height: 100%; }
+
+@media (max-width: 991px) {
+  #main-background .tablet-display-none {
+    display: none; } }
 
 
 /*# sourceMappingURL=/tali-lessons.e31bb0bc.css.map */

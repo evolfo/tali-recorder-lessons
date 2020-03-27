@@ -9,7 +9,7 @@ class HomePage extends React.Component {
     return (
       <>
         <Grid id="main-background">
-          <GridColumn tablet={0} computer={8}></GridColumn>
+          <GridColumn className="tablet-display-none" tablet={0} computer={8}></GridColumn>
           <GridColumn tablet={16} computer={8} className="main-about-text">
             <Header className="centered-text">
               Learn Recorder with&nbsp;Tali!
