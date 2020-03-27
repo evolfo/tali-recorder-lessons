@@ -1,30 +1,38 @@
 import React, {useState} from 'react'
 import {Form, Header, Container} from 'semantic-ui-react'
  
-const Contact = () => {
+class Contact extends React.Component {
 
-    const [email, setEmail] = useState('')
-    const [name, setName] = useState('')
-    const [comments, setComments] = useState('')
+    // const [email, setEmail] = useState('')
+    // const [name, setName] = useState('')
+    // const [comments, setComments] = useState('')
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
+    // const handleSubmit = (e) => {
+    //     e.preventDefault();
 
-        fetch(`https://hooks.zapier.com/hooks/catch/7045148/o1vyoou/`, {
-            method: 'POST',
-            body: JSON.stringify({ email, name, comments }),
-        })
-    }
+    //     fetch(`https://hooks.zapier.com/hooks/catch/7045148/o1vyoou/`, {
+    //         method: 'POST',
+    //         body: JSON.stringify({ email, name, comments }),
+    //     })
+    // }
 
-    const emailIsValidCheck = () => {
-        const emailIsValid = email.match(/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i)
-        return emailIsValid
-    }
+    // const emailIsValidCheck = () => {
+    //     const emailIsValid = email.match(/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i)
+    //     return emailIsValid
+    // }
 
-    return (
-        <>
-          <Container id="contact-wrapper">
-                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScxhYHXfEXjIkT0uO3VhZcGjNhOtQBUgvT_x0Pg-L4L2zk_2A/viewform?embedded=true" frameborder="0" marginheight="0" scrolling="no" marginwidth="0">Loading…</iframe>
+    render() {
+        return (
+            <>
+            <Container id="contact-wrapper">
+                <div className="responsive-iframe">
+                    <iframe 
+                        src="https://docs.google.com/forms/d/e/1FAIpQLScxhYHXfEXjIkT0uO3VhZcGjNhOtQBUgvT_x0Pg-L4L2zk_2A/viewform?embedded=true" 
+                        frameBorder="0" 
+                        marginHeight="0" 
+                        scrolling="no" 
+                        marginWidth="0">Loading…</iframe>
+                </div>
             {/* <Header>Contact Me</Header>
             <Form onSubmit={handleSubmit}>
                 <Form.Group id="contact-form">
@@ -56,9 +64,10 @@ const Contact = () => {
                         <Form.Button disabled={((email.length === 0 || name.length === 0) || !emailIsValidCheck())} content='Submit' />
                 </Form.Group>
             </Form> */}
-          </Container>
-        </>
-    )
+            </Container>
+            </>
+        )
+    }
 }
 
 export default Contact

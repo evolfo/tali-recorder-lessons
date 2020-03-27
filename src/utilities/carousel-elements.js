@@ -17,7 +17,7 @@ const elements = [
   },
   {
     render: () => {
-      return <p>2222222</p>;
+      return <h2>2222222</h2>;
     }
   }
 ];
