@@ -11,9 +11,9 @@ html {
   #app .main-about-text {
     font-size: 3rem;
     padding-bottom: 1.8rem; }
-    @media screen and (max-device-width: 768px) {
+    @media screen and (max-device-width: 508px) {
       #app .main-about-text {
-        font-size: 5.5rem; } }
+        font-size: 2.3rem; } }
   #app .video-header {
     color: white; }
 
@@ -26,9 +26,6 @@ html {
     @media screen and (max-width: 768px) {
       #app .navbar img, #footer img {
         max-width: 300px; } }
-    @media screen and (max-device-width: 768px) {
-      #app .navbar img, #footer img {
-        max-width: 900px; } }
   #app .navbar a, #footer a {
     color: white;
     padding-left: 1rem;
@@ -66,10 +63,10 @@ html {
       font-size: 1.5rem;
       color: #2a5a8a;
       padding: 2rem; }
-      @media screen and (max-device-width: 768px) {
+      @media screen and (max-device-width: 508px) {
         #app .navbar .header-burger .item, #footer .header-burger .item {
-          font-size: 4rem;
-          padding: 3rem; } }
+          font-size: 1.2rem;
+          padding: 1.5rem; } }
     #app .navbar .header-burger .item:hover, #footer .header-burger .item:hover {
       background: #2a5a8a;
       color: white;
@@ -80,15 +77,8 @@ html {
     #app .navbar div.header-burger .menu, #footer div.header-burger .menu {
       left: -11.3rem;
       border: none; }
-      @media screen and (max-device-width: 768px) {
-        #app .navbar div.header-burger .menu, #footer div.header-burger .menu {
-          left: -26.4rem; } }
     #app .navbar div.header-burger i.icon, #footer div.header-burger i.icon {
       font-size: 2rem; }
-      @media screen and (max-device-width: 768px) {
-        #app .navbar div.header-burger i.icon, #footer div.header-burger i.icon {
-          font-size: 4rem;
-          margin-top: 2rem; } }
   #app .navbar .hide-header, #footer .hide-header {
     display: flex;
     align-items: center;
@@ -108,13 +98,15 @@ html {
 
 #footer {
   margin-top: 0; }
-  @media screen and (max-device-width: 768px) {
+  @media screen and (max-device-width: 508px) {
     #footer {
-      padding: 3rem; }
+      padding: 2rem; }
       #footer i.icon {
-        font-size: 4rem; }
+        font-size: 1.5rem; }
       #footer .header {
-        font-size: 2.2rem; } }
+        font-size: 1.2rem; }
+      #footer .ui.horizontal.list > .item {
+        margin-left: 0; } }
 
 #main-background {
   background: url("/background1.a781dd50.jpg");
@@ -149,24 +141,24 @@ html {
         #main-background .main-about-text .header {
           font-size: 3.9rem;
           line-height: normal; } }
-      @media screen and (max-device-width: 768px) {
+      @media screen and (max-device-width: 508px) {
         #main-background .main-about-text .header {
-          font-size: 6rem;
+          font-size: 2.3rem;
           line-height: normal; } }
     #main-background .main-about-text p {
       font-size: 1.3rem; }
       @media screen and (max-width: 768px) {
         #main-background .main-about-text p {
           font-size: 1.9rem; } }
-      @media screen and (max-device-width: 768px) {
+      @media screen and (max-device-width: 508px) {
         #main-background .main-about-text p {
-          font-size: 3.1rem; } }
+          font-size: 1.1rem; } }
   #main-background #about-me-front {
     font-size: 3rem;
     font-weight: 900; }
-  @media screen and (max-device-width: 768px) {
+  @media screen and (max-device-width: 508px) {
     #main-background button {
-      font-size: 3rem; } }
+      font-size: 1rem; } }
 
 #tutorial-videos {
   padding-left: 10rem;
@@ -182,9 +174,9 @@ html {
   @media screen and (max-width: 991px) {
     #tutorial-videos {
       padding: 4rem; } }
-  @media screen and (max-device-width: 768px) {
+  @media screen and (max-device-width: 508px) {
     #tutorial-videos {
-      padding: 6rem; } }
+      padding: 3rem; } }
 
 #testimonials {
   padding-left: 10rem;
@@ -202,13 +194,15 @@ html {
   @media screen and (max-width: 991px) {
     #testimonials {
       padding: 4rem; } }
-  @media screen and (max-device-width: 768px) {
+  @media screen and (max-device-width: 508px) {
     #testimonials {
-      padding: 6rem; }
+      padding: 2rem; }
       #testimonials h2 {
-        font-size: 3.4rem; }
+        font-size: 1.5rem; }
       #testimonials h3 {
-        font-size: 3rem; } }
+        font-size: 1.2rem; }
+      #testimonials .main-about-text {
+        padding: 0; } }
   #testimonials .ui.fluid.card {
     box-shadow: none;
     -webkit-box-shadow: none;
@@ -240,10 +234,9 @@ html {
   @media screen and (max-width: 768px) {
     #about-wrapper .about-vid {
       padding: 3rem; } }
-  @media screen and (max-device-width: 768px) {
-    #about-wrapper .about-vid {
-      padding: 4rem;
-      margin: 7rem; } }
+  @media screen and (max-device-width: 508px) {
+    #about-wrapper .about-vid .header {
+      font-size: 2.2rem; } }
 
 #about {
   background: #cad7e3;
@@ -268,17 +261,14 @@ html {
     @media screen and (max-width: 768px) {
       #about .header {
         font-size: 2.4rem; } }
-    @media screen and (max-device-width: 768px) {
-      #about .header {
-        font-size: 5rem; } }
   #about .about-text {
     padding: 2rem; }
     @media screen and (max-width: 768px) {
       #about .about-text {
         padding: 3rem; } }
-    @media screen and (max-device-width: 768px) {
+    @media screen and (max-device-width: 508px) {
       #about .about-text {
-        padding: 0rem; } }
+        padding: 2rem; } }
   #about .column.about-img {
     padding: 0rem; }
   #about .about-text, #about .about-img {
@@ -320,7 +310,7 @@ html {
       #about #about-card {
         width: 100%;
         display: block; } }
-    @media screen and (max-device-width: 768px) {
+    @media screen and (max-device-width: 508px) {
       #about #about-card {
         width: 100%;
         display: block; } }
@@ -349,12 +339,12 @@ html {
   #about p:nth-child(2) {
     font-size: 1.3rem;
     font-weight: 900; }
-    @media screen and (max-device-width: 768px) {
+    @media screen and (max-width: 768px) {
       #about p:nth-child(2) {
-        font-size: 2.5rem; } }
+        font-size: 1rem; } }
   #about img {
     width: 100%; }
-    @media screen and (max-device-width: 768px) {
+    @media screen and (max-device-width: 508px) {
       #about img {
         border: 20px     #fff; } }
   #about p {
@@ -364,10 +354,7 @@ html {
     -ms-flex-positive: 0; }
     @media screen and (max-width: 768px) {
       #about p {
-        font-size: 1rem; } }
-    @media screen and (max-device-width: 768px) {
-      #about p {
-        font-size: 2.1rem; } }
+        font-size: .9rem; } }
 
 #contact-wrapper iframe {
   width: 100%;
@@ -395,9 +382,23 @@ html {
   padding: 5rem; }
   #tutorials .header {
     font-size: 2.9rem; }
+    @media screen and (max-device-width: 508px) {
+      #tutorials .header {
+        font-size: 1.3rem; } }
   #tutorials h3 {
     padding-bottom: 4rem;
     font-weight: 400; }
+    @media screen and (max-device-width: 508px) {
+      #tutorials h3 {
+        font-size: 1rem;
+        padding-bottom: 2rem; } }
+  @media screen and (max-device-width: 508px) {
+    #tutorials {
+      padding: 2.3rem; }
+      #tutorials h2 {
+        font-size: 1.2rem; } }
+  #tutorials .row > .column:first-child {
+    padding-bottom: 2rem; }
 
 .iframe-container {
   overflow: hidden;
@@ -430,3 +431,5 @@ html {
   #main-background .tablet-display-none {
     display: none; } }
 
+
+/*# sourceMappingURL=/tali-lessons.e31bb0bc.css.map */

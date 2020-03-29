@@ -9,7 +9,7 @@ const Tutorials = () => {
         <h3>Learn your recorder basics here with this free educational series produced by Carnegie Hall.
         First, get to meet Tali as she walks you through some of her recorder arsenal, next learn how to maintain 
         good posture, breathing, and articulation, and finally learn how to play the C-major scale.</h3>
-        <Grid>
+        <Grid padded='vertically'>
           <GridRow>
             <GridColumn computer={8} mobile={16}>
               <h2>Meet Tali</h2>
