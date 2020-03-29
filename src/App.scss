@@ -1,15 +1,19 @@
 // Media breakpoints 
  @mixin breakpoint($point) {
   @if $point == desktop {
-     @media screen and (min-device-width: 1240px) { @content ; }
+     @media screen and (min-device-width: 1240px)  { @content ; }
      @media screen and (min-width: 1240px) { @content ; }
   }
+  @else if $point == huge {
+    @media screen and (max-device-width: 1577px)  { @content ; }
+    @media screen and (max-width: 1577px) { @content ;}
+  }
   @else if $point == laptop {
-     @media screen and (max-device-width: 1239px) { @content ; }
+     @media screen and (max-device-width: 1239px)  { @content ; }
      @media screen and (max-width: 1239px) { @content ; }
   }
   @else if $point == tablet {
-     @media screen and (max-device-width: 991px) { @content ; }
+     @media screen and (max-device-width: 991px)  { @content ; }
      @media screen and (max-width: 991px) { @content ; }
   }
   @else if $point == smallest {
@@ -322,6 +326,12 @@ html {
     .about-vid {
         padding: 6rem;
 
+        .header {
+            font-size: 2.9rem;
+            text-align: center;
+            padding-bottom: 2rem;
+        }
+
         @include breakpoint(smallest) {
             padding: 3rem;
         }
@@ -334,10 +344,16 @@ html {
 }
 
 #about{
-    border: 58px solid #2a5a8a24;
+    background: rgb(202,215,227);
+    background: linear-gradient(90deg, #d6ebff 0%, #abd2f9 100%);
+    padding: 14rem;
+    padding-top: 6rem;
 
+    @include breakpoint(tablet) {
+        padding: 6rem;
+    }
     @include breakpoint(smallest) {
-        border: 44px solid #2a5a8a24;
+        padding: 2rem;
     }
 
     .header {
@@ -347,20 +363,24 @@ html {
         -webkit-box-flex: 0;
         -ms-flex-positive: 0;
 
+        @include breakpoint(smallest) {
+            font-size: 2.4rem;  
+        }
+
         @include breakpoint(formobile) {
             font-size: 5rem;
         }
     }
 
     .about-text {
-        padding: 4rem;
+        padding: 2rem;
 
         @include breakpoint(smallest) {
             padding: 3rem;
         }
 
         @include breakpoint(formobile) {
-            padding: 6rem;
+            padding: 0rem;
         }
     }
 
@@ -370,19 +390,29 @@ html {
 
     .about-text, .about-img {
         box-shadow: 0px -1px 23px #2a5a89;
-        border: 36px inset #2a5a89;
+        border: 17px inset #2a5a89;
+        background: #ffffff94;
 
         @include breakpoint(laptop) {
             width: 100% !important;
         }
+        @include breakpoint(huge) {
+            width: 100% !important;
+        }
+        
     }
 
     #about-card {
         width: 100%;
         padding: 0rem;
 
+        @include breakpoint(huge) {
+            width: 92%;
+            display: inline-flex;
+        }
+
         @include breakpoint(laptop) {
-            width: 93%;
+            width: 92%;
             display: inline-flex;
         }
 
@@ -395,11 +425,34 @@ html {
             width: 100%;
             display: block;
         }
+
+        img:first-child {
+            border-bottom: 16px solid #2a5a89;
+
+            @include breakpoint(huge) {
+                border-bottom: none;
+                border-right: 16px solid #2a5a89;
+            }
+
+            @include breakpoint(laptop) {
+                border-bottom: none;
+                border-right: 16px solid #2a5a89;
+            }
+
+            @include breakpoint(smallest) {
+                border-bottom: 16px solid #2a5a89;
+                border-right: none;
+            }
+        }
     }
 
     p:nth-child(2) {
         font-size: 1.3rem;
         font-weight: 900;
+
+        @include breakpoint(smalles) {
+            font-size: 1.1rem;
+        }
 
         @include breakpoint(formobile) {
             font-size: 2.5rem;
@@ -420,6 +473,10 @@ html {
         flex-grow: 0;
         -webkit-box-flex: 0;
         -ms-flex-positive: 0;
+
+        @include breakpoint(smallest) {
+            font-size: 1rem;
+        }
 
         @include breakpoint(formobile) {
             font-size: 2.1rem;
@@ -456,6 +513,21 @@ html {
 
     .field {
         padding-top: 1rem;
+    }
+}
+
+// TUTORIALS
+
+#tutorials {
+    padding: 5rem;
+
+    .header {
+        font-size: 2.9rem;
+        // text-align: center;
+    }
+    h3 {
+        padding-bottom: 4rem;
+        font-weight: 400;
     }
 }
 

@@ -233,6 +233,10 @@ html {
 
 #about-wrapper .about-vid {
   padding: 6rem; }
+  #about-wrapper .about-vid .header {
+    font-size: 2.9rem;
+    text-align: center;
+    padding-bottom: 2rem; }
   @media screen and (max-width: 768px) {
     #about-wrapper .about-vid {
       padding: 3rem; } }
@@ -242,48 +246,75 @@ html {
       margin: 7rem; } }
 
 #about {
-  border: 58px solid #2a5a8a24; }
+  background: #cad7e3;
+  background: linear-gradient(90deg, #d6ebff 0%, #abd2f9 100%);
+  padding: 14rem;
+  padding-top: 6rem; }
+  @media screen and (max-device-width: 991px) {
+    #about {
+      padding: 6rem; } }
+  @media screen and (max-width: 991px) {
+    #about {
+      padding: 6rem; } }
   @media screen and (max-width: 768px) {
     #about {
-      border: 44px solid #2a5a8a24; } }
+      padding: 2rem; } }
   #about .header {
     text-align: center;
     font-size: 2.9rem;
     flex-grow: 0;
     -webkit-box-flex: 0;
     -ms-flex-positive: 0; }
+    @media screen and (max-width: 768px) {
+      #about .header {
+        font-size: 2.4rem; } }
     @media screen and (max-device-width: 768px) {
       #about .header {
         font-size: 5rem; } }
   #about .about-text {
-    padding: 4rem; }
+    padding: 2rem; }
     @media screen and (max-width: 768px) {
       #about .about-text {
         padding: 3rem; } }
     @media screen and (max-device-width: 768px) {
       #about .about-text {
-        padding: 6rem; } }
+        padding: 0rem; } }
   #about .column.about-img {
     padding: 0rem; }
   #about .about-text, #about .about-img {
     box-shadow: 0px -1px 23px #2a5a89;
-    border: 36px inset #2a5a89; }
+    border: 17px inset #2a5a89;
+    background: #ffffff94; }
     @media screen and (max-device-width: 1239px) {
       #about .about-text, #about .about-img {
         width: 100% !important; } }
     @media screen and (max-width: 1239px) {
+      #about .about-text, #about .about-img {
+        width: 100% !important; } }
+    @media screen and (max-device-width: 1577px) {
+      #about .about-text, #about .about-img {
+        width: 100% !important; } }
+    @media screen and (max-width: 1577px) {
       #about .about-text, #about .about-img {
         width: 100% !important; } }
   #about #about-card {
     width: 100%;
     padding: 0rem; }
+    @media screen and (max-device-width: 1577px) {
+      #about #about-card {
+        width: 92%;
+        display: inline-flex; } }
+    @media screen and (max-width: 1577px) {
+      #about #about-card {
+        width: 92%;
+        display: inline-flex; } }
     @media screen and (max-device-width: 1239px) {
       #about #about-card {
-        width: 93%;
+        width: 92%;
         display: inline-flex; } }
     @media screen and (max-width: 1239px) {
       #about #about-card {
-        width: 93%;
+        width: 92%;
         display: inline-flex; } }
     @media screen and (max-width: 768px) {
       #about #about-card {
@@ -293,6 +324,28 @@ html {
       #about #about-card {
         width: 100%;
         display: block; } }
+    #about #about-card img:first-child {
+      border-bottom: 16px solid #2a5a89; }
+      @media screen and (max-device-width: 1577px) {
+        #about #about-card img:first-child {
+          border-bottom: none;
+          border-right: 16px solid #2a5a89; } }
+      @media screen and (max-width: 1577px) {
+        #about #about-card img:first-child {
+          border-bottom: none;
+          border-right: 16px solid #2a5a89; } }
+      @media screen and (max-device-width: 1239px) {
+        #about #about-card img:first-child {
+          border-bottom: none;
+          border-right: 16px solid #2a5a89; } }
+      @media screen and (max-width: 1239px) {
+        #about #about-card img:first-child {
+          border-bottom: none;
+          border-right: 16px solid #2a5a89; } }
+      @media screen and (max-width: 768px) {
+        #about #about-card img:first-child {
+          border-bottom: 16px solid #2a5a89;
+          border-right: none; } }
   #about p:nth-child(2) {
     font-size: 1.3rem;
     font-weight: 900; }
@@ -309,6 +362,9 @@ html {
     flex-grow: 0;
     -webkit-box-flex: 0;
     -ms-flex-positive: 0; }
+    @media screen and (max-width: 768px) {
+      #about p {
+        font-size: 1rem; } }
     @media screen and (max-device-width: 768px) {
       #about p {
         font-size: 2.1rem; } }
@@ -334,6 +390,14 @@ html {
 
 #contact-wrapper .field {
   padding-top: 1rem; }
+
+#tutorials {
+  padding: 5rem; }
+  #tutorials .header {
+    font-size: 2.9rem; }
+  #tutorials h3 {
+    padding-bottom: 4rem;
+    font-weight: 400; }
 
 .iframe-container {
   overflow: hidden;
@@ -366,5 +430,3 @@ html {
   #main-background .tablet-display-none {
     display: none; } }
 
-
-/*# sourceMappingURL=/tali-lessons.e31bb0bc.css.map */
