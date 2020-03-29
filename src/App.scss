@@ -60,6 +60,8 @@ html {
 
     img {
         max-width: 400px;
+        margin-left: -2.5rem;
+        margin-right: -2.5rem;
 
         @include breakpoint(smallest) {
             max-width: 300px;
@@ -68,8 +70,6 @@ html {
 
     a {
         color: white;
-        padding-left: 1rem;
-        padding-right: 1rem;
     }
 
     > .menu {
@@ -141,6 +141,14 @@ html {
         align-items: center;
         font-size: 1.2rem;
 
+        button {
+            position: absolute;
+            right: 2%;
+            top: 21%;
+            padding: 1.5rem;
+            font-size: 1.4rem;
+        }
+
         @include breakpoint(tablet) {
             display: none;
         }
@@ -200,7 +208,7 @@ html {
             widows: 2;
 
             @include breakpoint(smallest) {
-                font-size: 3.9rem;
+                font-size: 3.2rem;
                 line-height: normal;
             }
 
@@ -397,14 +405,30 @@ html {
         width: 100%;
         padding: 0rem;
 
-        @include breakpoint(huge) {
-            width: 92%;
-            display: inline-flex;
+        /* Style only for Google Chrome/Opera */
+        @media screen and (-webkit-min-device-pixel-ratio:0) {
+            @include breakpoint(huge) {
+                width: 50%;
+                display: inline-flex;
+            }
+
+            @include breakpoint(laptop) {
+                width: 50%;
+                display: inline-flex;
+            }
         }
 
-        @include breakpoint(laptop) {
-            width: 92%;
-            display: inline-flex;
+        /* Style only for Mozilla Firefox */
+        @-moz-document url-prefix() {
+            @include breakpoint(huge) {
+                width: 92%;
+                display: inline-flex;
+            }
+
+            @include breakpoint(laptop) {
+                width: 92%;
+                display: inline-flex;
+            }
         }
 
         @include breakpoint(smallest) {
