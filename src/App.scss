@@ -36,6 +36,7 @@ html {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    overflow: hidden;
 
     .main-about-text {
         font-size: 3rem;
