@@ -32254,7 +32254,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"/Users/angelospampinato/Development/tali-lessons/img/background1.jpg":[["background1.a781dd50.jpg","img/background1.jpg"],"img/background1.jpg"],"/Users/angelospampinato/Development/tali-lessons/img/testimonial-background3.jpg":[["testimonial-background3.cbe0bd5a.jpg","img/testimonial-background3.jpg"],"img/testimonial-background3.jpg"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"node_modules/@babel/runtime/helpers/classCallCheck.js":[function(require,module,exports) {
+},{"/Users/angelospampinato/Development/tali-lessons/img/background1.jpg":[["background1.a781dd50.jpg","img/background1.jpg"],"img/background1.jpg"],"/Users/angelospampinato/Development/tali-lessons/img/testimonial-background3.jpg":[["testimonial-background3.cbe0bd5a.jpg","img/testimonial-background3.jpg"],"img/testimonial-background3.jpg"],"/Users/angelospampinato/Development/tali-lessons/img/tali-drawing.png":[["tali-drawing.40222824.png","img/tali-drawing.png"],"img/tali-drawing.png"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"node_modules/@babel/runtime/helpers/classCallCheck.js":[function(require,module,exports) {
 function _classCallCheck(instance, Constructor) {
   if (!(instance instanceof Constructor)) {
     throw new TypeError("Cannot call a class as a function");
@@ -76157,6 +76157,9 @@ var MainHeader = /*#__PURE__*/function (_React$Component) {
         active: activeItem === "home",
         onClick: this.handleMenuItemClick
       })), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
+        style: {
+          zIndex: 10
+        },
         to: "/tutorials"
       }, /*#__PURE__*/_react.default.createElement(_semanticUiReact.Menu.Item, {
         name: "tutorials",
@@ -77600,7 +77603,11 @@ var elements = [{
   }
 }, {
   render: function render() {
-    return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("h2", null, "\"Tali Rubinstein meets the students at their current level and accompanies the eager jazz beginners with empathy in their first steps.\"\""), /*#__PURE__*/_react.default.createElement("h3", null, "- Sina Bayer (Germany)"));
+    return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("h2", null, "\"I was very excited whilst on a visit to New York City from Australia in 2016 to be able to line up a lesson with my favourite jazz recorder player, Tali Rubinstein. Tali was supportive and encouraging and gave me lots of jazz practice ideas which I'm still using 4 years later!\""), /*#__PURE__*/_react.default.createElement("h3", null, "- Marion Lustig (Australia)"));
+  }
+}, {
+  render: function render() {
+    return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("h2", null, "\"Tali Rubinstein meets the students at their current level and accompanies the eager jazz beginners with empathy in their first steps.\""), /*#__PURE__*/_react.default.createElement("h3", null, "- Sina Bayer (Germany)"));
   }
 }];
 var _default = elements;
@@ -77671,7 +77678,7 @@ var HomePage = /*#__PURE__*/function (_React$Component) {
       }, "The answer is \u2013 yes. NYC based Award-winning recorder player Tali Rubinstein will teach you\xA0how."), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
         to: "/book-lesson"
       }, /*#__PURE__*/_react.default.createElement(_semanticUiReact.Button, {
-        secondary: true
+        primary: true
       }, "Book a Lesson Now")))), /*#__PURE__*/_react.default.createElement(_semanticUiReact.Grid, {
         id: "tutorial-videos"
       }, /*#__PURE__*/_react.default.createElement(_semanticUiReact.Header, {
@@ -77703,6 +77710,8 @@ var HomePage = /*#__PURE__*/function (_React$Component) {
       })))), /*#__PURE__*/_react.default.createElement(_semanticUiReact.Grid, {
         centered: true,
         id: "testimonials"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "testimonial-background-color"
       }, /*#__PURE__*/_react.default.createElement(_semanticUiReact.Header, {
         className: "main-about-text testimonials-header"
       }, "Testimonials"), /*#__PURE__*/_react.default.createElement(_semanticUiReact.GridColumn, {
@@ -77714,7 +77723,7 @@ var HomePage = /*#__PURE__*/function (_React$Component) {
         animation: "slide left",
         showNextPrev: false,
         showIndicators: true
-      }))));
+      })))));
     }
   }]);
   return HomePage;
@@ -77763,13 +77772,13 @@ var About = function About() {
     tablet: 12,
     computer: 7,
     className: "about-text"
-  }, /*#__PURE__*/_react.default.createElement(_semanticUiReact.Header, null, "About Tali"), /*#__PURE__*/_react.default.createElement("p", null, "Like most kids, Tali began playing the recorder in 2nd grade. Unlike most, she never stopped."), /*#__PURE__*/_react.default.createElement("p", null, "Tali was professionally trained in classical baroque and renaissance music from a young age. She studied in prestigious music schools in Israel (Thelma Yellin High School of the Arts, Rimon School) and received a full scholarship to attend Berklee College of Music in Boston, where she became the first recorder player to ever study there. Winning numerous awards throughout her career, Tali has established herself in jazz, pop and R&B music, exploring and challenging the boundaries of this ancient baroque instrument."), /*#__PURE__*/_react.default.createElement("p", null, "Tali has taught private lessons and workshops all around the world, for all levels of recorder players. While in Israel, Tali taught for two years at the Neve Sharet Conservatory in Tel Aviv, and since moving to the US she\u2019s been teaching privately in NYC for over five years."), /*#__PURE__*/_react.default.createElement("p", null, "Tali has given workshops in the US (Carnegie Hall), Germany (Frankfurt University of Music and Performing Arts), Israel (Israel International Recorder Festival), The Philippines (UP College of Music, Philippine Women\u2019s University, University of Santo Tomas and New Era University), Taiwan (Tsing Hua University), Uruguay (Jazz a la Calle festival) and Spain (Colegio Decroly)."), /*#__PURE__*/_react.default.createElement("p", null, "To learn more about Tali, visit ", /*#__PURE__*/_react.default.createElement("a", {
+  }, /*#__PURE__*/_react.default.createElement(_semanticUiReact.Header, null, "About Tali"), /*#__PURE__*/_react.default.createElement("p", null, "Like most kids, Tali began playing the recorder in 2nd grade. Unlike most, she never stopped."), /*#__PURE__*/_react.default.createElement("p", null, "Tali was professionally trained in classical baroque and renaissance music from a young age. She studied in prestigious music schools in Israel (Thelma Yellin High School of the Arts, Rimon School) and received a full scholarship to attend Berklee College of Music in Boston, where she became the first recorder player to ever study there. Winning numerous awards throughout her career, Tali has established herself in jazz, pop and R&B music, exploring and challenging the boundaries of this ancient baroque instrument."), /*#__PURE__*/_react.default.createElement("p", null, "Tali has taught private lessons and workshops all around the world, for all levels of recorder players. While in Israel, Tali taught for two years at the Neve Sharet Conservatory in Tel Aviv, and since moving to the US she\u2019s been teaching privately in NYC for over five years."), /*#__PURE__*/_react.default.createElement("p", null, "Tali has given workshops in the US (Carnegie Hall), Germany (Frankfurt University of Music and Performing Arts), Israel (Israel International Recorder Festival), The Philippines (UP College of Music, Philippine Women\u2019s University, University of Santo Tomas and New Era University), Taiwan (Tsing Hua University), Uruguay (Jazz a la Calle festival) and Spain (Colegio Decroly)."), /*#__PURE__*/_react.default.createElement("p", null, "To learn more about Tali, visit", " ", /*#__PURE__*/_react.default.createElement("a", {
     href: "https://www.talirubinstein.com"
   }, "www.talirubinstein.com"), ".")), /*#__PURE__*/_react.default.createElement(_semanticUiReact.GridColumn, {
     stretched: "true",
     className: "about-img",
     tablet: 16,
-    computer: 6
+    computer: 4
   }, /*#__PURE__*/_react.default.createElement("div", {
     id: "about-card"
   }, /*#__PURE__*/_react.default.createElement(_semanticUiReact.Image, {
@@ -77778,13 +77787,15 @@ var About = function About() {
   }), /*#__PURE__*/_react.default.createElement(_semanticUiReact.Image, {
     alt: "Tali teaching recorder to a group of kids",
     src: _aboutImg.default
-  })))), /*#__PURE__*/_react.default.createElement(_semanticUiReact.Container, {
+  })))), /*#__PURE__*/_react.default.createElement("div", {
+    className: "about-vid-wrapper"
+  }, /*#__PURE__*/_react.default.createElement(_semanticUiReact.Container, {
     className: "about-vid"
   }, /*#__PURE__*/_react.default.createElement(_semanticUiReact.Header, null, "Tali with her Band"), /*#__PURE__*/_react.default.createElement(_semanticUiReact.Embed, {
     id: "lMFN3UKNBh8",
     placeholder: _placeholderVid.default,
     source: "youtube"
-  })));
+  }))));
 };
 
 var _default = About;
@@ -77863,23 +77874,13 @@ var Contact = /*#__PURE__*/function (_React$Component) {
 
   (0, _createClass2.default)(Contact, [{
     key: "render",
-    // const [email, setEmail] = useState('')
-    // const [name, setName] = useState('')
-    // const [comments, setComments] = useState('')
-    // const handleSubmit = (e) => {
-    //     e.preventDefault();
-    //     fetch(`https://hooks.zapier.com/hooks/catch/7045148/o1vyoou/`, {
-    //         method: 'POST',
-    //         body: JSON.stringify({ email, name, comments }),
-    //     })
-    // }
-    // const emailIsValidCheck = () => {
-    //     const emailIsValid = email.match(/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i)
-    //     return emailIsValid
-    // }
     value: function render() {
       return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(_semanticUiReact.Container, {
         id: "contact-wrapper"
+      }, /*#__PURE__*/_react.default.createElement(_semanticUiReact.Grid, null, /*#__PURE__*/_react.default.createElement(_semanticUiReact.GridRow, null, /*#__PURE__*/_react.default.createElement(_semanticUiReact.GridColumn, {
+        mobile: 16,
+        tablet: 11,
+        computer: 10
       }, /*#__PURE__*/_react.default.createElement("div", {
         className: "responsive-iframe"
       }, /*#__PURE__*/_react.default.createElement("iframe", {
@@ -77888,7 +77889,7 @@ var Contact = /*#__PURE__*/function (_React$Component) {
         marginHeight: "0",
         scrolling: "no",
         marginWidth: "0"
-      }, "Loading\u2026"))));
+      }, "Loading\u2026")))))));
     }
   }]);
   return Contact;
@@ -77959,7 +77960,7 @@ var Tutorials = function Tutorials() {
   }, /*#__PURE__*/_react.default.createElement("iframe", {
     width: "560",
     height: "315",
-    src: "https://www.youtube-nocookie.com/embed/pRbAKAPOcos",
+    src: "https://www.youtube-nocookie.com/embed/7uho-etcCoI",
     frameborder: "0",
     allow: "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture",
     allowfullscreen: true
@@ -77971,7 +77972,7 @@ var Tutorials = function Tutorials() {
   }, /*#__PURE__*/_react.default.createElement("iframe", {
     width: "560",
     height: "315",
-    src: "https://www.youtube-nocookie.com/embed/7uho-etcCoI",
+    src: "https://www.youtube-nocookie.com/embed/pRbAKAPOcos",
     frameborder: "0",
     allow: "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture",
     allowfullscreen: true
@@ -78085,6 +78086,12 @@ var Footer = function Footer() {
     circular: true,
     name: "youtube",
     size: "big"
+  })))), /*#__PURE__*/_react.default.createElement(_semanticUiReact.List.Item, null, /*#__PURE__*/_react.default.createElement(_semanticUiReact.List.Content, null, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
+    to: "https://www.talirubinstein.com"
+  }, /*#__PURE__*/_react.default.createElement(_semanticUiReact.Icon, {
+    circular: true,
+    name: "globe",
+    size: "big"
   }))))), /*#__PURE__*/_react.default.createElement(_semanticUiReact.Header, null, "Copyright \xA9 2020 Tali Rubinstein"));
 };
 
@@ -78162,7 +78169,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57260" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62459" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

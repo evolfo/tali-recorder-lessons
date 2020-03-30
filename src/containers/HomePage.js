@@ -22,7 +22,7 @@ class HomePage extends React.Component {
               Rubinstein will teach you&nbsp;how.
             </p>
             <Link to="/book-lesson">
-              <Button secondary>Book a Lesson Now</Button>
+              <Button primary>Book a Lesson Now</Button>
             </Link>
           </GridColumn>
         </Grid>
@@ -56,17 +56,19 @@ class HomePage extends React.Component {
           </GridColumn>
         </Grid>
         <Grid centered id="testimonials">
-          <Header className="main-about-text testimonials-header">
-            Testimonials
-          </Header>
-          <GridColumn className="testimonials-text" computer={12} tablet={16}>
-            <Carousel
-              elements={elements}
-              animation="slide left"
-              showNextPrev={false}
-              showIndicators={true}
-            />
-          </GridColumn>
+          <div className="testimonial-background-color">
+            <Header className="main-about-text testimonials-header">
+              Testimonials
+            </Header>
+            <GridColumn className="testimonials-text" computer={12} tablet={16}>
+              <Carousel
+                elements={elements}
+                animation="slide left"
+                showNextPrev={false}
+                showIndicators={true}
+              />
+            </GridColumn>
+          </div>
         </Grid>
       </>
     );

@@ -32,7 +32,7 @@ class MainHeader extends React.Component {
                 onClick={this.handleMenuItemClick}
               />
             </Link>
-            <Link to="/tutorials">
+            <Link style={{zIndex: 10}} to="/tutorials">
               <Menu.Item
                 name="tutorials"
                 active={activeItem === "tutorials"}

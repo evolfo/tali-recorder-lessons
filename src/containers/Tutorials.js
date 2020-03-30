@@ -6,10 +6,14 @@ const Tutorials = () => {
     return (
       <Container id="tutorials">
         <Header>Carnegie Hall Education Series: Recorder Basics</Header>
-        <h3>Learn your recorder basics here with this free educational series produced by Carnegie Hall.
-        First, get to meet Tali as she walks you through some of her recorder arsenal, next learn how to maintain 
-        good posture, breathing, and articulation, and finally learn how to play the C-major scale.</h3>
-        <Grid padded='vertically'>
+        <h3>
+          Learn your recorder basics here with this free educational series
+          produced by Carnegie Hall. First, get to meet Tali as she walks you
+          through some of her recorder arsenal, next learn how to maintain good
+          posture, breathing, and articulation, and finally learn how to play
+          the C-major scale.
+        </h3>
+        <Grid padded="vertically">
           <GridRow>
             <GridColumn computer={8} mobile={16}>
               <h2>Meet Tali</h2>
@@ -58,7 +62,7 @@ const Tutorials = () => {
                 <iframe
                   width="560"
                   height="315"
-                  src="https://www.youtube-nocookie.com/embed/pRbAKAPOcos"
+                  src="https://www.youtube-nocookie.com/embed/7uho-etcCoI"
                   frameborder="0"
                   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen
@@ -73,7 +77,7 @@ const Tutorials = () => {
                 <iframe
                   width="560"
                   height="315"
-                  src="https://www.youtube-nocookie.com/embed/7uho-etcCoI"
+                  src="https://www.youtube-nocookie.com/embed/pRbAKAPOcos"
                   frameborder="0"
                   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen

@@ -22,6 +22,9 @@
   @else if $point == formobile {
       @media screen and (max-device-width: 508px)  { @content ; }
   }
+  @else if $point == smallheightfix {
+      @media screen and (max-height: 750px) and (min-width: 977px) { @content ; }
+  }
 }
 
 html {
@@ -56,7 +59,7 @@ html {
 
 #app .navbar, #footer {
     border-radius: 0;
-    background: #2a5a8a;
+    background: linear-gradient(180deg, #2b77c4 0%, #2a5a8a 100%);
     z-index: 10;
 
     img {
@@ -117,9 +120,9 @@ html {
         }
 
         .item:hover {
-            background: #2a5a8a;
+            background: linear-gradient(180deg, #2b77c4 0%, #2a5a8a 100%);
             color: white;
-            transition: .3s;
+            transition: .1s;
         }
     }
 
@@ -148,6 +151,7 @@ html {
             top: 21%;
             padding: 1.5rem;
             font-size: 1.4rem;
+            background: #70bcf4;
         }
 
         @include breakpoint(tablet) {
@@ -188,7 +192,7 @@ html {
     height: 70vh;
     background-size: cover;
     background-position: center;
-    background-position-x: -17rem;
+    background-position-x: -19.2rem;
 
     @include breakpoint(tablet) {
         height: 100%;
@@ -202,6 +206,11 @@ html {
         }
         padding: 8rem;
         padding-top: 11rem;
+
+        @include breakpoint(smallheightfix) {
+            padding: 1rem;
+            padding-top: 6rem;
+        }
 
         .header {
             font-size: 2.9rem;
@@ -236,6 +245,8 @@ html {
     }
 
     button {
+        background: linear-gradient(180deg, #2b77c4 0%, #2a5a8a 100%);
+
         @include breakpoint(formobile) {
             font-size: 1rem;
         }
@@ -249,7 +260,7 @@ html {
     padding-top: 6rem;
     display: block;
     text-align: center;
-    background: #2a5a8a;
+    background: linear-gradient(180deg, #2b77c4 0%, #2a5a8a 100%);
     @include breakpoint(tablet) {
         padding: 4rem;
     }
@@ -272,6 +283,16 @@ html {
 
     @include breakpoint(tablet) {
         padding: 4rem;
+
+        h2 {
+            font-size: 1.3rem;
+        }
+        h3 {
+            font-size: 1rem;
+        }
+        .main-about-text {
+            font-size: 2.3rem;
+        }
     }
 
     @include breakpoint(formobile) {
@@ -298,6 +319,10 @@ html {
         min-height: 231px;
     }
 
+    .testimonials-header {
+        color: white;
+    }
+
     .carousel-indicators a {
         padding-right: .4rem;
     }
@@ -305,6 +330,28 @@ html {
     .ui.empty.circular.label {
         width: 1.5rem;
         height: 1.5rem;
+    }
+
+    .testimonial-background-color {
+        background: linear-gradient(180deg, #2b77c4b5 0%, #2a5a8a8f 100%);
+        max-width: 75%;
+        margin: 0 auto;
+        padding: 3rem;
+        color: white;
+        border-radius: 7px;
+
+        @include breakpoint(tablet) {
+            max-width: 90%;
+            padding: 2.3rem;
+        }
+    }
+
+    .ui.grey.label {
+        background-color: white !important;
+    }
+
+    .ui.black.label {
+        background-color: #2e528a !important;
     }
 }
 
@@ -326,13 +373,21 @@ html {
 
 // ABOUT
 #about-wrapper {
+    .about-vid-wrapper {
+        background: linear-gradient(180deg, #298aec 0%, #4d93d7 100%);
+        width: 100%;
+    }
+
     .about-vid {
-        padding: 6rem;
+        padding: 10rem;
+        padding-top: 4rem;
+        padding-bottom: 6rem;
 
         .header {
             font-size: 2.9rem;
             text-align: center;
             padding-bottom: 2rem;
+            color: white;
         }
 
         @include breakpoint(smallest) {
@@ -348,16 +403,14 @@ html {
 }
 
 #about{
-    background: rgb(202,215,227);
-    background: linear-gradient(90deg, #d6ebff 0%, #abd2f9 100%);
-    padding: 14rem;
-    padding-top: 6rem;
+    padding: 4rem;
+    padding-top: 3rem;
 
     @include breakpoint(tablet) {
-        padding: 6rem;
+        padding: 3rem;
     }
     @include breakpoint(smallest) {
-        padding: 2rem;
+        padding: 1rem;
     }
 
     .header {
@@ -372,32 +425,18 @@ html {
         }
     }
 
-    .about-text {
-        padding: 2rem;
-
-        @include breakpoint(smallest) {
-            padding: 3rem;
-        }
-
-        @include breakpoint(formobile) {
-            padding: 2rem;
-        }
-    }
-
     .column.about-img {
         padding: 0rem;
     }
 
     .about-text, .about-img {
-        box-shadow: 0px -1px 23px #2a5a89;
-        border: 17px inset #2a5a89;
-        background: #ffffff94;
+        padding-top: 0rem;
 
         @include breakpoint(laptop) {
             width: 100% !important;
         }
         @include breakpoint(huge) {
-            width: 100% !important;
+            width: 80% !important;
         }
         
     }
@@ -443,20 +482,20 @@ html {
         }
 
         img:first-child {
-            border-bottom: 16px solid #2a5a89;
+            border-bottom: 16px solid #fff;
 
             @include breakpoint(huge) {
                 border-bottom: none;
-                border-right: 16px solid #2a5a89;
+                border-right: 16px solid #fff;
             }
 
             @include breakpoint(laptop) {
                 border-bottom: none;
-                border-right: 16px solid #2a5a89;
+                border-right: 16px solid #fff;
             }
 
             @include breakpoint(smallest) {
-                border-bottom: 16px solid #2a5a89;
+                border-bottom: 16px solid #fff;
                 border-right: none;
             }
         }
@@ -495,7 +534,25 @@ html {
 // CONTACT
 
 #contact-wrapper {
-    
+    background: url('/img/tali-drawing.png');
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position-x: 46rem;
+
+    @include breakpoint(laptop) {
+        background-position-x: 39rem;
+    }
+
+    @include breakpoint(tablet) {
+        background-position-x: 31rem;
+    }
+
+    @include breakpoint(smallest) {
+        background: #fff;
+    }
+
+
     iframe {
         width: 100%;
         height: 100%;
@@ -503,6 +560,10 @@ html {
 
         @include breakpoint(smallest) {
             min-height: 730px;
+        }
+
+        @include breakpoint(laptop) {
+            min-height: 700px;
         }
     }
 
