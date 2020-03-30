@@ -22,22 +22,10 @@ const About = () => {
               Unlike most, she never stopped.
             </p>
             <p>
-              Tali was professionally trained in classical baroque and
-              renaissance music from a young age. She studied in prestigious
-              music schools in Israel (Thelma Yellin High School of the Arts,
-              Rimon School) and received a full scholarship to attend Berklee
-              College of Music in Boston, where she became the first recorder
-              player to ever study there. Winning numerous awards throughout her
-              career, Tali has established herself in jazz, pop and R&amp;B
-              music, exploring and challenging the boundaries of this ancient
-              baroque instrument.
+              Tali was professionally trained in classical baroque and renaissance music from a young age, studying in prestigious music schools in Israel (Thelma Yellin High School of the Arts, Rimon School of Music). The first ever recorder player to attend Berklee College of Music in Boston, Tali received a full scholarship and completed her B.Mus with honors. Winning numerous awards and honors (recently: composing and recording for a Latin Grammy winning album, and being mentioned on Barack Obama’s Favorite Songs of 2018), Tali has established herself worldwide in jazz, pop and R&B music, exploring and challenging the boundaries of this ancient baroque instrument. 
             </p>
             <p>
-              Tali has taught private lessons and workshops all around the
-              world, for all levels of recorder players. While in Israel, Tali
-              taught for two years at the Neve Sharet Conservatory in Tel Aviv,
-              and since moving to the US she’s been teaching privately in NYC
-              for over five years.
+              While obtaining a successful career as a performing artist, Tali has made it a priority to educate the next generation of recorder players, teaching private lessons and workshops all over the world, for all levels of recorder players. While in Israel, Tali taught for two years at the Neve Sharet Conservatory in Tel Aviv, and since moving to the US she’s been teaching privately in NYC for over five years.
             </p>
             <p>
               Tali has given workshops in the US (Carnegie Hall), Germany
