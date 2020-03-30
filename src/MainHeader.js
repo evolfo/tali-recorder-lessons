@@ -69,7 +69,7 @@ class MainHeader extends React.Component {
                 name="book-lesson"
                 onClick={this.handleMenuItemClick}
               >
-                Book Now
+                Book A Lesson
               </Button>
             </Link>
           </div>

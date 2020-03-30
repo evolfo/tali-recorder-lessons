@@ -76192,7 +76192,7 @@ var MainHeader = /*#__PURE__*/function (_React$Component) {
         primary: true,
         name: "book-lesson",
         onClick: this.handleMenuItemClick
-      }, "Book Now"))), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
+      }, "Book A Lesson"))), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
         to: "/"
       }, /*#__PURE__*/_react.default.createElement(_semanticUiReact.Image, {
         className: "header-burger",

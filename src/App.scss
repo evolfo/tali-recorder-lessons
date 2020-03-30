@@ -208,8 +208,9 @@ html {
         padding-top: 11rem;
 
         @include breakpoint(smallheightfix) {
-            padding: 1rem;
+            padding: 2rem;
             padding-top: 6rem;
+            padding-right: 6rem;
         }
 
         .header {
