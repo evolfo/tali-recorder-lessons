@@ -90,7 +90,10 @@ html {
       top: 21%;
       padding: 1.5rem;
       font-size: 1.4rem;
-      background: #70bcf4; }
+      background: linear-gradient(90deg, #50a5f9 0%, #6e8fae 100%); }
+    #app .navbar .hide-header button:hover, #footer .hide-header button:hover {
+      background: linear-gradient(270deg, #8fc4f9 0%, #72aee6 100%);
+      transition: .2s; }
     @media screen and (max-device-width: 991px) {
       #app .navbar .hide-header, #footer .hide-header {
         display: none; } }
@@ -121,7 +124,7 @@ html {
   height: 70vh;
   background-size: cover;
   background-position: center;
-  background-position-x: -19.2rem; }
+  background-position-x: -19.9rem; }
   @media screen and (max-device-width: 991px) {
     #main-background {
       height: 100%;
@@ -145,7 +148,8 @@ html {
       #main-background .main-about-text {
         padding: 2rem;
         padding-top: 6rem;
-        padding-right: 6rem; } }
+        padding-left: 7rem;
+        padding-right: 5.4rem; } }
     #main-background .main-about-text .header {
       font-size: 2.9rem;
       line-height: 3.5rem;
@@ -174,6 +178,9 @@ html {
     @media screen and (max-device-width: 508px) {
       #main-background button {
         font-size: 1rem; } }
+  #main-background button:hover {
+    background: linear-gradient(270deg, #8fc4f9 0%, #72aee6 100%);
+    transition: .2s; }
 
 #tutorial-videos {
   padding-left: 10rem;

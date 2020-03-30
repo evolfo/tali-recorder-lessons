@@ -151,7 +151,12 @@ html {
             top: 21%;
             padding: 1.5rem;
             font-size: 1.4rem;
-            background: #70bcf4;
+            background: linear-gradient(90deg, #50a5f9 0%, #6e8fae 100%);
+        }
+
+        button:hover {
+            background: linear-gradient(270deg, #8fc4f9 0%, #72aee6 100%);
+            transition: .2s;
         }
 
         @include breakpoint(tablet) {
@@ -192,7 +197,7 @@ html {
     height: 70vh;
     background-size: cover;
     background-position: center;
-    background-position-x: -19.2rem;
+    background-position-x: -19.9rem;
 
     @include breakpoint(tablet) {
         height: 100%;
@@ -210,7 +215,8 @@ html {
         @include breakpoint(smallheightfix) {
             padding: 2rem;
             padding-top: 6rem;
-            padding-right: 6rem;
+            padding-left: 7rem;
+            padding-right: 5.4rem;
         }
 
         .header {
@@ -251,6 +257,11 @@ html {
         @include breakpoint(formobile) {
             font-size: 1rem;
         }
+    }
+
+    button:hover {
+        background: linear-gradient(270deg, #8fc4f9 0%, #72aee6 100%);
+        transition: .2s;
     }
 }
 

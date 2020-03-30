@@ -25,7 +25,6 @@ class MainHeader extends React.Component {
   render() {
     const { activeItem } = this.state;
 
-
     return (
       <Segment className="navbar" inverted>
         <Menu inverted pointing secondary>
@@ -74,7 +73,7 @@ class MainHeader extends React.Component {
                 name="book-lesson"
                 onClick={this.handleMenuItemClick}
               >
-                Book A Lesson
+                Book a Lesson
               </Button>
             </Link>
           </div>
