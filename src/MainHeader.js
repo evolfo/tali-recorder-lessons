@@ -16,10 +16,15 @@ class MainHeader extends React.Component {
     this.setState({ activeItem: "home"})
   }
 
+  componentDidMount() {
+    const len = document.location.href.split('/').length
+    const activeItem = document.location.href.split('/')[len - 1]
+    this.setState({activeItem})
+  }
+
   render() {
     const { activeItem } = this.state;
 
-    console.log(activeItem)
 
     return (
       <Segment className="navbar" inverted>

@@ -76137,10 +76137,18 @@ var MainHeader = /*#__PURE__*/function (_React$Component) {
   }
 
   (0, _createClass2.default)(MainHeader, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      var len = document.location.href.split('/').length;
+      var activeItem = document.location.href.split('/')[len - 1];
+      this.setState({
+        activeItem: activeItem
+      });
+    }
+  }, {
     key: "render",
     value: function render() {
       var activeItem = this.state.activeItem;
-      console.log(activeItem);
       return /*#__PURE__*/_react.default.createElement(_semanticUiReact.Segment, {
         className: "navbar",
         inverted: true
