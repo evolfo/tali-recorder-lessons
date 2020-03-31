@@ -279,6 +279,8 @@ html {
       margin-top: -1.9rem; } }
   #book-lesson .sixteen.wide.column {
     padding-bottom: 6rem; }
+  #book-lesson .timify-button {
+    margin-top: 200px; }
 
 #about-wrapper .about-vid-wrapper {
   background: linear-gradient(180deg, #298aec 0%, #4d93d7 100%);

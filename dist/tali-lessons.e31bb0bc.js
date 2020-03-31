@@ -77827,13 +77827,10 @@ var BookLesson = function BookLesson() {
     id: "book-lesson"
   }, /*#__PURE__*/_react.default.createElement(_semanticUiReact.GridColumn, {
     width: 16
-  }, /*#__PURE__*/_react.default.createElement("iframe", {
-    src: "https://talirecorder.setmore.com",
-    scrolling: "no",
-    width: "100%",
-    height: "100%",
-    frameborder: "0"
-  })));
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    class: "timify-button",
+    "data-account-id": "5e82b61f2ce85164d0d5152b"
+  }, "Book appointment online")));
 };
 
 var _default = BookLesson;
@@ -78177,7 +78174,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62459" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53510" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
