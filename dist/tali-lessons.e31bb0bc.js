@@ -76195,11 +76195,13 @@ var MainHeader = /*#__PURE__*/function (_React$Component) {
         active: activeItem === "contact",
         onClick: this.handleMenuItemClick
       })), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
-        to: "/book-lesson"
+        to: "#"
       }, /*#__PURE__*/_react.default.createElement(_semanticUiReact.Button, {
         primary: true,
         name: "book-lesson",
-        onClick: this.handleMenuItemClick
+        onClick: this.handleMenuItemClick,
+        className: "timify-button",
+        "data-account-id": "5e82b61f2ce85164d0d5152b"
       }, "Book a Lesson"))), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
         to: "/"
       }, /*#__PURE__*/_react.default.createElement(_semanticUiReact.Image, {
@@ -77684,8 +77686,10 @@ var HomePage = /*#__PURE__*/function (_React$Component) {
       }, "Ever wondered \u2013 \u201CCan I actually play that on a\xA0recorder?\u201D"), /*#__PURE__*/_react.default.createElement("p", {
         className: "centered-text"
       }, "The answer is \u2013 yes. NYC based Award-winning recorder player Tali Rubinstein will teach you\xA0how."), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
-        to: "/book-lesson"
+        to: "#"
       }, /*#__PURE__*/_react.default.createElement(_semanticUiReact.Button, {
+        className: "timify-button",
+        "data-account-id": "5e82b61f2ce85164d0d5152b",
         primary: true
       }, "Book a Lesson Now")))), /*#__PURE__*/_react.default.createElement(_semanticUiReact.Grid, {
         id: "tutorial-videos"

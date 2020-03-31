@@ -21,8 +21,9 @@ class HomePage extends React.Component {
               The answer is – yes. NYC based Award-winning recorder player Tali
               Rubinstein will teach you&nbsp;how.
             </p>
-            <Link to="/book-lesson">
-              <Button primary>Book a Lesson Now</Button>
+            <Link to="#">
+              <Button className="timify-button"
+                data-account-id="5e82b61f2ce85164d0d5152b" primary>Book a Lesson Now</Button>
             </Link>
           </GridColumn>
         </Grid>

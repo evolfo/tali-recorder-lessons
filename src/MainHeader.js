@@ -67,11 +67,13 @@ class MainHeader extends React.Component {
                 onClick={this.handleMenuItemClick}
               />
             </Link>
-            <Link to="/book-lesson">
+            <Link to="#">
               <Button
                 primary
                 name="book-lesson"
                 onClick={this.handleMenuItemClick}
+                className="timify-button"
+                data-account-id="5e82b61f2ce85164d0d5152b"
               >
                 Book a Lesson
               </Button>
