@@ -36,7 +36,7 @@ class MainHeader extends React.Component {
                 onClick={this.handleMenuItemClick}
               />
             </Link>
-            <Link style={{zIndex: 10}} to="/tutorials">
+            <Link style={{ zIndex: 10 }} to="/tutorials">
               <Menu.Item
                 name="tutorials"
                 active={activeItem === "tutorials"}
@@ -103,8 +103,13 @@ class MainHeader extends React.Component {
               <Link to="/contact">
                 <DropdownItem text="Contact" />
               </Link>
-              <Link to="/book-lesson">
-                <DropdownItem text="Book a Lesson" />
+              <Link>
+                <DropdownItem
+                  name="book-lesson"
+                  className="timify-button"
+                  data-account-id="5e82b61f2ce85164d0d5152b"
+                  text="Book a Lesson"
+                />
               </Link>
             </DropdownMenu>
           </Dropdown>

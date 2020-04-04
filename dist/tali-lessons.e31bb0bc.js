@@ -76230,9 +76230,10 @@ var MainHeader = /*#__PURE__*/function (_React$Component) {
         to: "/contact"
       }, /*#__PURE__*/_react.default.createElement(_semanticUiReact.DropdownItem, {
         text: "Contact"
-      })), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
-        to: "/book-lesson"
-      }, /*#__PURE__*/_react.default.createElement(_semanticUiReact.DropdownItem, {
+      })), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, null, /*#__PURE__*/_react.default.createElement(_semanticUiReact.DropdownItem, {
+        name: "book-lesson",
+        className: "timify-button",
+        "data-account-id": "5e82b61f2ce85164d0d5152b",
         text: "Book a Lesson"
       }))))));
     }
@@ -77609,11 +77610,19 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var elements = [{
   render: function render() {
+    return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("h2", null, "\"We were so fortunate that Tali came into our lives when my son was looking for a music teacher who took the recorder seriously! Not only did Tali teach my son how to play and experiment with the various recorder sizes, she introduced him to many new musical genres, and she encouraged him to compose. My son was so inspired, he continues to compose and this spring wrote a piece for the NY Philharmonic orchestra! Tali's patience and generosity of spirit is remarkable. She teaches with warmth, humor, and great flexibility.\""), /*#__PURE__*/_react.default.createElement("h3", null, "- Julie Roth (USA)"));
+  }
+}, {
+  render: function render() {
     return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("h2", null, "\"Tali was very patient with my beginner status and offered some useful techniques that I am able to employ immediately to enjoy my instrument!\""), /*#__PURE__*/_react.default.createElement("h3", null, "- David Alvarez (USA)"));
   }
 }, {
   render: function render() {
     return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("h2", null, "\"I was very excited whilst on a visit to New York City from Australia in 2016 to be able to line up a lesson with my favourite jazz recorder player, Tali Rubinstein. Tali was supportive and encouraging and gave me lots of jazz practice ideas which I'm still using 4 years later!\""), /*#__PURE__*/_react.default.createElement("h3", null, "- Marion Lustig (Australia)"));
+  }
+}, {
+  render: function render() {
+    return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("h2", null, "\"It was great! We communicated for several days before the class to discuss my skill level and what music I like. She observed how I play and made suggestions to help me improve. We worked on one of my favorite Jazz Songs. Tali gave pointers and material to work on.\""), /*#__PURE__*/_react.default.createElement("h3", null, "- Ajyman Johnson (USA)"));
   }
 }, {
   render: function render() {
@@ -77732,7 +77741,8 @@ var HomePage = /*#__PURE__*/function (_React$Component) {
         tablet: 16
       }, /*#__PURE__*/_react.default.createElement(_semanticUiCarouselReact.default, {
         elements: _carouselElements.default,
-        animation: "slide left",
+        duration: 9000,
+        animation: "bounce",
         showNextPrev: false,
         showIndicators: true
       })))));
@@ -78178,7 +78188,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53510" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51341" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

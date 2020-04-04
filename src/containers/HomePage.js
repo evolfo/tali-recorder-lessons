@@ -9,7 +9,11 @@ class HomePage extends React.Component {
     return (
       <>
         <Grid id="main-background">
-          <GridColumn className="tablet-display-none" tablet={0} computer={8}></GridColumn>
+          <GridColumn
+            className="tablet-display-none"
+            tablet={0}
+            computer={8}
+          ></GridColumn>
           <GridColumn tablet={16} computer={8} className="main-about-text">
             <Header className="centered-text">
               Learn Recorder with&nbsp;Tali!
@@ -22,8 +26,13 @@ class HomePage extends React.Component {
               Rubinstein will teach you&nbsp;how.
             </p>
             <Link to="#">
-              <Button className="timify-button"
-                data-account-id="5e82b61f2ce85164d0d5152b" primary>Book a Lesson Now</Button>
+              <Button
+                className="timify-button"
+                data-account-id="5e82b61f2ce85164d0d5152b"
+                primary
+              >
+                Book a Lesson Now
+              </Button>
             </Link>
           </GridColumn>
         </Grid>
@@ -64,7 +73,8 @@ class HomePage extends React.Component {
             <GridColumn className="testimonials-text" computer={12} tablet={16}>
               <Carousel
                 elements={elements}
-                animation="slide left"
+                duration={9000}
+                animation="bounce"
                 showNextPrev={false}
                 showIndicators={true}
               />
