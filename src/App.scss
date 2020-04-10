@@ -133,6 +133,10 @@ html {
         .menu {
             left: -11.3rem;
             border: none;
+
+            @include breakpoint(formobile) {
+                left: -8.3rem;
+            };
         }
 
         i.icon {
@@ -202,6 +206,10 @@ html {
     @include breakpoint(tablet) {
         height: 100%;
         background-position-x: 15rem;
+     }
+
+     @include breakpoint(formobile) {
+         background: transparent;
      }
 
     .main-about-text {

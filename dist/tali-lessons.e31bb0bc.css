@@ -78,6 +78,9 @@ html {
     #app .navbar div.header-burger .menu, #footer div.header-burger .menu {
       left: -11.3rem;
       border: none; }
+      @media screen and (max-device-width: 508px) {
+        #app .navbar div.header-burger .menu, #footer div.header-burger .menu {
+          left: -8.3rem; } }
     #app .navbar div.header-burger i.icon, #footer div.header-burger i.icon {
       font-size: 2rem; }
   #app .navbar .hide-header, #footer .hide-header {
@@ -133,6 +136,9 @@ html {
     #main-background {
       height: 100%;
       background-position-x: 15rem; } }
+  @media screen and (max-device-width: 508px) {
+    #main-background {
+      background: transparent; } }
   #main-background .main-about-text {
     padding: 8rem;
     padding-top: 11rem; }
