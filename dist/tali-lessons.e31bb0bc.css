@@ -174,7 +174,8 @@ html {
     font-size: 3rem;
     font-weight: 900; }
   #main-background button {
-    background: linear-gradient(180deg, #2b77c4 0%, #2a5a8a 100%); }
+    background: linear-gradient(180deg, #2b77c4 0%, #2a5a8a 100%);
+    font-size: 1.3rem; }
     @media screen and (max-device-width: 508px) {
       #main-background button {
         font-size: 1rem; } }
@@ -207,9 +208,7 @@ html {
   padding-top: 6rem;
   display: block;
   text-align: center;
-  background: url("/testimonial-background3.cbe0bd5a.jpg");
-  background-size: cover;
-  background-position: center; }
+  background: linear-gradient(180deg, #2b77c4b5 0%, #2a5a8a8f 100%); }
   @media screen and (max-device-width: 991px) {
     #testimonials {
       padding: 4rem; }
@@ -251,7 +250,6 @@ html {
     width: 1.5rem;
     height: 1.5rem; }
   #testimonials .testimonial-background-color {
-    background: linear-gradient(180deg, #2b77c4b5 0%, #2a5a8a8f 100%);
     max-width: 75%;
     margin: 0 auto;
     padding: 3rem;
@@ -283,7 +281,7 @@ html {
     margin-top: 200px; }
 
 #about-wrapper .about-vid-wrapper {
-  background: linear-gradient(180deg, #298aec 0%, #4d93d7 100%);
+  background: linear-gradient(180deg, #6e859b, #4d88c1);
   width: 100%; }
 
 #about-wrapper .about-vid {
@@ -302,86 +300,65 @@ html {
     #about-wrapper .about-vid .header {
       font-size: 2.2rem; } }
 
+#about-wrapper .header {
+  text-align: center;
+  font-size: 2.9rem;
+  flex-grow: 0;
+  -webkit-box-flex: 0;
+  -ms-flex-positive: 0;
+  margin-top: 1.5rem; }
+  @media screen and (max-width: 768px) {
+    #about-wrapper .header {
+      font-size: 2.4rem; } }
+
 #about {
   padding: 4rem;
-  padding-top: 3rem; }
+  padding-top: 3rem;
+  background: url("/about1.0215d38a.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-y: -10px;
+  background-position-x: 15rem; }
+  @media screen and (max-device-width: 1577px) {
+    #about {
+      background-position-x: 7rem; } }
+  @media screen and (max-width: 1577px) {
+    #about {
+      background-position-x: 7rem; } }
+  @media screen and (max-device-width: 1239px) {
+    #about {
+      background: url("/about1-faded.8a83b596.jpg");
+      background-size: contain;
+      background-repeat: no-repeat; }
+      #about .about-text {
+        width: 100% !important; } }
+  @media screen and (max-width: 1239px) {
+    #about {
+      background: url("/about1-faded.8a83b596.jpg");
+      background-size: contain;
+      background-repeat: no-repeat; }
+      #about .about-text {
+        width: 100% !important; } }
   @media screen and (max-device-width: 991px) {
     #about {
-      padding: 3rem; } }
+      padding: 3rem;
+      background-size: cover; } }
   @media screen and (max-width: 991px) {
     #about {
-      padding: 3rem; } }
+      padding: 3rem;
+      background-size: cover; } }
   @media screen and (max-width: 768px) {
     #about {
-      padding: 1rem; } }
-  #about .header {
-    text-align: center;
-    font-size: 2.9rem;
-    flex-grow: 0;
-    -webkit-box-flex: 0;
-    -ms-flex-positive: 0; }
-    @media screen and (max-width: 768px) {
-      #about .header {
-        font-size: 2.4rem; } }
+      padding: 3rem; } }
   #about .column.about-img {
     padding: 0rem; }
   #about .about-text, #about .about-img {
     padding-top: 0rem; }
-    @media screen and (max-device-width: 1239px) {
-      #about .about-text, #about .about-img {
-        width: 100% !important; } }
-    @media screen and (max-width: 1239px) {
-      #about .about-text, #about .about-img {
-        width: 100% !important; } }
-    @media screen and (max-device-width: 1577px) {
-      #about .about-text, #about .about-img {
-        width: 80% !important; } }
-    @media screen and (max-width: 1577px) {
-      #about .about-text, #about .about-img {
-        width: 80% !important; } }
   #about #about-card {
     width: 100%;
     padding: 0rem;
-    /* Style only for Google Chrome/Opera */
-    /* Style only for Mozilla Firefox */ }
-
-@media screen and (-webkit-min-device-pixel-ratio: 0) and (max-device-width: 1577px) {
-  #about #about-card {
-    width: 50%;
-    display: inline-flex; } }
-
-@media screen and (-webkit-min-device-pixel-ratio: 0) and (max-width: 1577px) {
-  #about #about-card {
-    width: 50%;
-    display: inline-flex; } }
-
-@media screen and (-webkit-min-device-pixel-ratio: 0) and (max-device-width: 1239px) {
-  #about #about-card {
-    width: 50%;
-    display: inline-flex; } }
-
-@media screen and (-webkit-min-device-pixel-ratio: 0) and (max-width: 1239px) {
-  #about #about-card {
-    width: 50%;
-    display: inline-flex; } }
-
-@-moz-document url-prefix() {
-  @media screen and (max-device-width: 1577px) {
-    #about #about-card {
-      width: 92%;
-      display: inline-flex; } }
-  @media screen and (max-width: 1577px) {
-    #about #about-card {
-      width: 92%;
-      display: inline-flex; } }
-  @media screen and (max-device-width: 1239px) {
-    #about #about-card {
-      width: 92%;
-      display: inline-flex; } }
-  @media screen and (max-width: 1239px) {
-    #about #about-card {
-      width: 92%;
-      display: inline-flex; } } }
+    /* Style only for Mozilla Firefox */
+    @-moz-document url-prefix() {} }
     @media screen and (max-width: 768px) {
       #about #about-card {
         width: 100%;
@@ -390,39 +367,12 @@ html {
       #about #about-card {
         width: 100%;
         display: block; } }
-    #about #about-card img:first-child {
-      border-bottom: 16px solid #fff; }
-      @media screen and (max-device-width: 1577px) {
-        #about #about-card img:first-child {
-          border-bottom: none;
-          border-right: 16px solid #fff; } }
-      @media screen and (max-width: 1577px) {
-        #about #about-card img:first-child {
-          border-bottom: none;
-          border-right: 16px solid #fff; } }
-      @media screen and (max-device-width: 1239px) {
-        #about #about-card img:first-child {
-          border-bottom: none;
-          border-right: 16px solid #fff; } }
-      @media screen and (max-width: 1239px) {
-        #about #about-card img:first-child {
-          border-bottom: none;
-          border-right: 16px solid #fff; } }
-      @media screen and (max-width: 768px) {
-        #about #about-card img:first-child {
-          border-bottom: 16px solid #fff;
-          border-right: none; } }
-  #about p:nth-child(2) {
+  #about p:nth-child(1) {
     font-size: 1.3rem;
     font-weight: 900; }
     @media screen and (max-width: 768px) {
-      #about p:nth-child(2) {
+      #about p:nth-child(1) {
         font-size: 1rem; } }
-  #about img {
-    width: 100%; }
-    @media screen and (max-device-width: 508px) {
-      #about img {
-        border: 20px     #fff; } }
   #about p {
     font-size: 1.1rem;
     flex-grow: 0;

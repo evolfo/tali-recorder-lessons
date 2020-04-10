@@ -253,6 +253,7 @@ html {
 
     button {
         background: linear-gradient(180deg, #2b77c4 0%, #2a5a8a 100%);
+        font-size: 1.3rem;
 
         @include breakpoint(formobile) {
             font-size: 1rem;
@@ -289,9 +290,7 @@ html {
     padding-top: 6rem;
     display: block;
     text-align: center;
-    background: url('/img/testimonial-background3.jpg');
-    background-size: cover;
-    background-position: center;
+    background: linear-gradient(180deg, #2b77c4b5 0%, #2a5a8a8f 100%);
 
     @include breakpoint(tablet) {
         padding: 4rem;
@@ -345,7 +344,6 @@ html {
     }
 
     .testimonial-background-color {
-        background: linear-gradient(180deg, #2b77c4b5 0%, #2a5a8a8f 100%);
         max-width: 75%;
         margin: 0 auto;
         padding: 3rem;
@@ -390,7 +388,7 @@ html {
 // ABOUT
 #about-wrapper {
     .about-vid-wrapper {
-        background: linear-gradient(180deg, #298aec 0%, #4d93d7 100%);
+        background: linear-gradient(180deg,#6e859b,#4d88c1);
         width: 100%;
     }
 
@@ -416,18 +414,6 @@ html {
             }
         }
     }
-}
-
-#about{
-    padding: 4rem;
-    padding-top: 3rem;
-
-    @include breakpoint(tablet) {
-        padding: 3rem;
-    }
-    @include breakpoint(smallest) {
-        padding: 1rem;
-    }
 
     .header {
         text-align: center;
@@ -435,10 +421,43 @@ html {
         flex-grow: 0;
         -webkit-box-flex: 0;
         -ms-flex-positive: 0;
+        margin-top: 1.5rem;
 
         @include breakpoint(smallest) {
             font-size: 2.4rem;  
         }
+    }
+}
+
+#about{
+    padding: 4rem;
+    padding-top: 3rem;
+    background: url("/img/about1.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: -10px;
+    background-position-x: 15rem;
+
+    @include breakpoint(huge) {
+        background-position-x: 7rem;
+    }
+
+    @include breakpoint(laptop) {
+        background: url("/img/about1-faded.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        .about-text {
+            width: 100% !important;
+        }
+    }
+
+    @include breakpoint(tablet) {
+        padding: 3rem;
+        background-size: cover;
+    }
+    @include breakpoint(smallest) {
+        padding: 3rem;
     }
 
     .column.about-img {
@@ -447,44 +466,27 @@ html {
 
     .about-text, .about-img {
         padding-top: 0rem;
-
-        @include breakpoint(laptop) {
-            width: 100% !important;
-        }
-        @include breakpoint(huge) {
-            width: 80% !important;
-        }
-        
     }
 
     #about-card {
         width: 100%;
         padding: 0rem;
 
-        /* Style only for Google Chrome/Opera */
-        @media screen and (-webkit-min-device-pixel-ratio:0) {
-            @include breakpoint(huge) {
-                width: 50%;
-                display: inline-flex;
-            }
+        // /* Style only for Google Chrome/Opera */
+        // @media screen and (-webkit-min-device-pixel-ratio:0) {
+        //     @include breakpoint(huge) {
+        //         width: 50%;
+        //         display: inline-flex;
+        //     }
 
-            @include breakpoint(laptop) {
-                width: 50%;
-                display: inline-flex;
-            }
-        }
+        //     @include breakpoint(laptop) {
+        //         width: 50%;
+        //         display: inline-flex;
+        //     }
+        // }
 
         /* Style only for Mozilla Firefox */
         @-moz-document url-prefix() {
-            @include breakpoint(huge) {
-                width: 92%;
-                display: inline-flex;
-            }
-
-            @include breakpoint(laptop) {
-                width: 92%;
-                display: inline-flex;
-            }
         }
 
         @include breakpoint(smallest) {
@@ -496,42 +498,14 @@ html {
             width: 100%;
             display: block;
         }
-
-        img:first-child {
-            border-bottom: 16px solid #fff;
-
-            @include breakpoint(huge) {
-                border-bottom: none;
-                border-right: 16px solid #fff;
-            }
-
-            @include breakpoint(laptop) {
-                border-bottom: none;
-                border-right: 16px solid #fff;
-            }
-
-            @include breakpoint(smallest) {
-                border-bottom: 16px solid #fff;
-                border-right: none;
-            }
-        }
     }
 
-    p:nth-child(2) {
+    p:nth-child(1) {
         font-size: 1.3rem;
         font-weight: 900;
 
         @include breakpoint(smallest) {
             font-size: 1rem;
-        }
-    }
-
-    img {
-        // padding: 1rem;
-        width: 100%;
-
-        @include breakpoint(formobile) {
-            border: 20px     #fff;
         }
     }
 
