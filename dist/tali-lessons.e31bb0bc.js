@@ -32182,9 +32182,7 @@ if ("development" !== "production") {
     style: _propTypes.default.object
   });
 }
-},{"react-router":"node_modules/react-router/esm/react-router.js","@babel/runtime/helpers/esm/inheritsLoose":"node_modules/@babel/runtime/helpers/esm/inheritsLoose.js","react":"node_modules/react/index.js","history":"node_modules/history/esm/history.js","prop-types":"node_modules/prop-types/index.js","tiny-warning":"node_modules/tiny-warning/dist/tiny-warning.esm.js","@babel/runtime/helpers/esm/extends":"node_modules/@babel/runtime/helpers/esm/extends.js","@babel/runtime/helpers/esm/objectWithoutPropertiesLoose":"node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js","tiny-invariant":"node_modules/tiny-invariant/dist/tiny-invariant.esm.js"}],"img/about1.jpg":[function(require,module,exports) {
-module.exports = "/about1.0215d38a.jpg";
-},{}],"node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+},{"react-router":"node_modules/react-router/esm/react-router.js","@babel/runtime/helpers/esm/inheritsLoose":"node_modules/@babel/runtime/helpers/esm/inheritsLoose.js","react":"node_modules/react/index.js","history":"node_modules/history/esm/history.js","prop-types":"node_modules/prop-types/index.js","tiny-warning":"node_modules/tiny-warning/dist/tiny-warning.esm.js","@babel/runtime/helpers/esm/extends":"node_modules/@babel/runtime/helpers/esm/extends.js","@babel/runtime/helpers/esm/objectWithoutPropertiesLoose":"node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js","tiny-invariant":"node_modules/tiny-invariant/dist/tiny-invariant.esm.js"}],"node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
 
 function getBundleURLCached() {
@@ -32256,7 +32254,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"/Users/angelospampinato/Development/tali-lessons/img/background1.jpg":[["background1.a781dd50.jpg","img/background1.jpg"],"img/background1.jpg"],"/Users/angelospampinato/Development/tali-lessons/img/about1.jpg":[["about1.0215d38a.jpg","img/about1.jpg"],"img/about1.jpg"],"/Users/angelospampinato/Development/tali-lessons/img/about1-faded.jpg":[["about1-faded.8a83b596.jpg","img/about1-faded.jpg"],"img/about1-faded.jpg"],"/Users/angelospampinato/Development/tali-lessons/img/tali-drawing.png":[["tali-drawing.40222824.png","img/tali-drawing.png"],"img/tali-drawing.png"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"node_modules/@babel/runtime/helpers/classCallCheck.js":[function(require,module,exports) {
+},{"/Users/angelospampinato/Development/tali-lessons/img/background1.jpg":[["background1.a781dd50.jpg","img/background1.jpg"],"img/background1.jpg"],"/Users/angelospampinato/Development/tali-lessons/img/about1.png":[["about1.c1946c01.png","img/about1.png"],"img/about1.png"],"/Users/angelospampinato/Development/tali-lessons/img/about1-faded.jpg":[["about1-faded.8a83b596.jpg","img/about1-faded.jpg"],"img/about1-faded.jpg"],"/Users/angelospampinato/Development/tali-lessons/img/tali-drawing.png":[["tali-drawing.40222824.png","img/tali-drawing.png"],"img/tali-drawing.png"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"node_modules/@babel/runtime/helpers/classCallCheck.js":[function(require,module,exports) {
 function _classCallCheck(instance, Constructor) {
   if (!(instance instanceof Constructor)) {
     throw new TypeError("Cannot call a class as a function");
@@ -77755,7 +77753,9 @@ var HomePage = /*#__PURE__*/function (_React$Component) {
 
 var _default = HomePage;
 exports.default = _default;
-},{"@babel/runtime/helpers/classCallCheck":"node_modules/@babel/runtime/helpers/classCallCheck.js","@babel/runtime/helpers/createClass":"node_modules/@babel/runtime/helpers/createClass.js","@babel/runtime/helpers/possibleConstructorReturn":"node_modules/@babel/runtime/helpers/possibleConstructorReturn.js","@babel/runtime/helpers/getPrototypeOf":"node_modules/@babel/runtime/helpers/getPrototypeOf.js","@babel/runtime/helpers/inherits":"node_modules/@babel/runtime/helpers/inherits.js","react":"node_modules/react/index.js","semantic-ui-react":"node_modules/semantic-ui-react/dist/es/index.js","semantic-ui-carousel-react":"node_modules/semantic-ui-carousel-react/dist/index.js","react-router-dom":"node_modules/react-router-dom/esm/react-router-dom.js","../utilities/carousel-elements":"src/utilities/carousel-elements.js"}],"img/placeholder-vid.jpg":[function(require,module,exports) {
+},{"@babel/runtime/helpers/classCallCheck":"node_modules/@babel/runtime/helpers/classCallCheck.js","@babel/runtime/helpers/createClass":"node_modules/@babel/runtime/helpers/createClass.js","@babel/runtime/helpers/possibleConstructorReturn":"node_modules/@babel/runtime/helpers/possibleConstructorReturn.js","@babel/runtime/helpers/getPrototypeOf":"node_modules/@babel/runtime/helpers/getPrototypeOf.js","@babel/runtime/helpers/inherits":"node_modules/@babel/runtime/helpers/inherits.js","react":"node_modules/react/index.js","semantic-ui-react":"node_modules/semantic-ui-react/dist/es/index.js","semantic-ui-carousel-react":"node_modules/semantic-ui-carousel-react/dist/index.js","react-router-dom":"node_modules/react-router-dom/esm/react-router-dom.js","../utilities/carousel-elements":"src/utilities/carousel-elements.js"}],"img/about1.jpg":[function(require,module,exports) {
+module.exports = "/about1.0215d38a.jpg";
+},{}],"img/placeholder-vid.jpg":[function(require,module,exports) {
 module.exports = "/placeholder-vid.3ea86051.jpg";
 },{}],"src/containers/About.js":[function(require,module,exports) {
 "use strict";
@@ -78175,7 +78175,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50371" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55138" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
