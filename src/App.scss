@@ -563,6 +563,10 @@ html {
         @include breakpoint(laptop) {
             min-height: 700px;
         }
+
+        @include breakpoint(formobile) {
+            min-height: 740px;
+        }
     }
 
     #contact-form {

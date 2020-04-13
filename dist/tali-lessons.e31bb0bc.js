@@ -76141,9 +76141,16 @@ var MainHeader = /*#__PURE__*/function (_React$Component) {
     value: function componentDidMount() {
       var len = document.location.href.split('/').length;
       var activeItem = document.location.href.split('/')[len - 1];
-      this.setState({
-        activeItem: activeItem
-      });
+
+      if (activeItem) {
+        this.setState({
+          activeItem: activeItem
+        });
+      } else {
+        this.setState({
+          activeItem: "home"
+        });
+      }
     }
   }, {
     key: "render",
@@ -76165,9 +76172,6 @@ var MainHeader = /*#__PURE__*/function (_React$Component) {
         active: activeItem === "home",
         onClick: this.handleMenuItemClick
       })), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
-        style: {
-          zIndex: 10
-        },
         to: "/tutorials"
       }, /*#__PURE__*/_react.default.createElement(_semanticUiReact.Menu.Item, {
         name: "tutorials",
@@ -76198,8 +76202,6 @@ var MainHeader = /*#__PURE__*/function (_React$Component) {
         to: "#"
       }, /*#__PURE__*/_react.default.createElement(_semanticUiReact.Button, {
         primary: true,
-        name: "book-lesson",
-        onClick: this.handleMenuItemClick,
         className: "timify-button",
         "data-account-id": "5e82b61f2ce85164d0d5152b"
       }, "Book a Lesson"))), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
@@ -76231,7 +76233,6 @@ var MainHeader = /*#__PURE__*/function (_React$Component) {
       }, /*#__PURE__*/_react.default.createElement(_semanticUiReact.DropdownItem, {
         text: "Contact"
       })), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, null, /*#__PURE__*/_react.default.createElement(_semanticUiReact.DropdownItem, {
-        name: "book-lesson",
         className: "timify-button",
         "data-account-id": "5e82b61f2ce85164d0d5152b",
         text: "Book a Lesson"
@@ -77676,6 +77677,20 @@ var HomePage = /*#__PURE__*/function (_React$Component) {
   }
 
   (0, _createClass2.default)(HomePage, [{
+    key: "componentDidMount",
+    // <script async type="text/javascript" src="//book.timify.com/widget/widget.min.js" data-lang="en" data-id="5e82b61f2ce85164d0d5152b" id="timify-widget" data-position="flexible"></script>
+    value: function componentDidMount() {
+      var script = document.createElement("script");
+      script.src = "//book.timify.com/widget/widget.min.js";
+      script.async = true;
+      script.id = "timify-widget";
+      script.dataset.id = "5e82b61f2ce85164d0d5152b";
+      script.dataset.position = "flexible";
+      script.dataset.lang = "en";
+      document.body.appendChild(script);
+      console.log(script);
+    }
+  }, {
     key: "render",
     value: function render() {
       return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(_semanticUiReact.Grid, {
@@ -77694,13 +77709,11 @@ var HomePage = /*#__PURE__*/function (_React$Component) {
         className: "centered-text"
       }, "Ever wondered \u2013 \u201CCan I actually play that on a\xA0recorder?\u201D"), /*#__PURE__*/_react.default.createElement("p", {
         className: "centered-text"
-      }, "The answer is \u2013 yes. NYC based Award-winning recorder player Tali Rubinstein will teach you\xA0how."), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
-        to: "#"
-      }, /*#__PURE__*/_react.default.createElement(_semanticUiReact.Button, {
+      }, "The answer is \u2013 yes. NYC based Award-winning recorder player Tali Rubinstein will teach you\xA0how."), /*#__PURE__*/_react.default.createElement(_semanticUiReact.Button, {
         className: "timify-button",
         "data-account-id": "5e82b61f2ce85164d0d5152b",
         primary: true
-      }, "Book a Lesson Now")))), /*#__PURE__*/_react.default.createElement(_semanticUiReact.Grid, {
+      }, "Book a Lesson Now"))), /*#__PURE__*/_react.default.createElement(_semanticUiReact.Grid, {
         id: "tutorial-videos"
       }, /*#__PURE__*/_react.default.createElement(_semanticUiReact.Header, {
         className: "main-about-text video-header"
@@ -78175,7 +78188,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55138" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56048" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

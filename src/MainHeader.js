@@ -19,7 +19,11 @@ class MainHeader extends React.Component {
   componentDidMount() {
     const len = document.location.href.split('/').length
     const activeItem = document.location.href.split('/')[len - 1]
-    this.setState({activeItem})
+    if (activeItem) {
+      this.setState({activeItem})
+    } else {
+      this.setState({activeItem: "home"})
+    }
   }
 
   render() {
@@ -36,7 +40,7 @@ class MainHeader extends React.Component {
                 onClick={this.handleMenuItemClick}
               />
             </Link>
-            <Link style={{ zIndex: 10 }} to="/tutorials">
+            <Link to="/tutorials">
               <Menu.Item
                 name="tutorials"
                 active={activeItem === "tutorials"}
@@ -70,8 +74,6 @@ class MainHeader extends React.Component {
             <Link to="#">
               <Button
                 primary
-                name="book-lesson"
-                onClick={this.handleMenuItemClick}
                 className="timify-button"
                 data-account-id="5e82b61f2ce85164d0d5152b"
               >
@@ -105,7 +107,6 @@ class MainHeader extends React.Component {
               </Link>
               <Link>
                 <DropdownItem
-                  name="book-lesson"
                   className="timify-button"
                   data-account-id="5e82b61f2ce85164d0d5152b"
                   text="Book a Lesson"

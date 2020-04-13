@@ -422,6 +422,9 @@ html {
     @media screen and (max-width: 1239px) {
       #contact-wrapper iframe {
         min-height: 700px; } }
+    @media screen and (max-device-width: 508px) {
+      #contact-wrapper iframe {
+        min-height: 740px; } }
   #contact-wrapper #contact-form {
     display: block;
     padding: 6rem;

@@ -5,6 +5,21 @@ import {Link} from 'react-router-dom'
 import elements from '../utilities/carousel-elements'
 
 class HomePage extends React.Component {
+
+  // <script async type="text/javascript" src="//book.timify.com/widget/widget.min.js" data-lang="en" data-id="5e82b61f2ce85164d0d5152b" id="timify-widget" data-position="flexible"></script>
+  componentDidMount(){
+    const script = document.createElement("script")
+    script.src = "//book.timify.com/widget/widget.min.js"
+    script.async = true
+    script.id = "timify-widget"
+    script.dataset.id = "5e82b61f2ce85164d0d5152b"
+    script.dataset.position = "flexible"
+    script.dataset.lang = "en"
+
+    document.body.appendChild(script)
+    console.log(script)
+  }
+
   render() {
     return (
       <>
@@ -25,7 +40,6 @@ class HomePage extends React.Component {
               The answer is – yes. NYC based Award-winning recorder player Tali
               Rubinstein will teach you&nbsp;how.
             </p>
-            <Link to="#">
               <Button
                 className="timify-button"
                 data-account-id="5e82b61f2ce85164d0d5152b"
@@ -33,7 +47,6 @@ class HomePage extends React.Component {
               >
                 Book a Lesson Now
               </Button>
-            </Link>
           </GridColumn>
         </Grid>
         <Grid id="tutorial-videos">
