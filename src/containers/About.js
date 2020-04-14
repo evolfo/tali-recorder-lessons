@@ -82,6 +82,7 @@ const About = () => {
               id="lMFN3UKNBh8"
               placeholder={placeholderVid}
               source="youtube"
+              alt="Tali with her band."
             />
           </Container>
         </div>

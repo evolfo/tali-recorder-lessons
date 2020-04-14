@@ -32249,7 +32249,13 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":"node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"src/App.scss":[function(require,module,exports) {
+},{"./bundle-url":"node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"node_modules/semantic-ui-css/semantic.min.css":[function(require,module,exports) {
+
+        var reloadCSS = require('_css_loader');
+        module.hot.dispose(reloadCSS);
+        module.hot.accept(reloadCSS);
+      
+},{"./themes/default/assets/images/flags.png":[["flags.2c341efe.png","node_modules/semantic-ui-css/themes/default/assets/images/flags.png"],"node_modules/semantic-ui-css/themes/default/assets/images/flags.png"],"./themes/default/assets/fonts/icons.eot":[["icons.3dcee5d2.eot","node_modules/semantic-ui-css/themes/default/assets/fonts/icons.eot"],"node_modules/semantic-ui-css/themes/default/assets/fonts/icons.eot"],"./themes/default/assets/fonts/icons.woff2":[["icons.9ebb781b.woff2","node_modules/semantic-ui-css/themes/default/assets/fonts/icons.woff2"],"node_modules/semantic-ui-css/themes/default/assets/fonts/icons.woff2"],"./themes/default/assets/fonts/icons.woff":[["icons.a37b2a10.woff","node_modules/semantic-ui-css/themes/default/assets/fonts/icons.woff"],"node_modules/semantic-ui-css/themes/default/assets/fonts/icons.woff"],"./themes/default/assets/fonts/icons.ttf":[["icons.3dea36b7.ttf","node_modules/semantic-ui-css/themes/default/assets/fonts/icons.ttf"],"node_modules/semantic-ui-css/themes/default/assets/fonts/icons.ttf"],"./themes/default/assets/fonts/icons.svg":[["icons.8e30d2cf.svg","node_modules/semantic-ui-css/themes/default/assets/fonts/icons.svg"],"node_modules/semantic-ui-css/themes/default/assets/fonts/icons.svg"],"./themes/default/assets/fonts/outline-icons.eot":[["outline-icons.f0713033.eot","node_modules/semantic-ui-css/themes/default/assets/fonts/outline-icons.eot"],"node_modules/semantic-ui-css/themes/default/assets/fonts/outline-icons.eot"],"./themes/default/assets/fonts/outline-icons.woff2":[["outline-icons.00239e7b.woff2","node_modules/semantic-ui-css/themes/default/assets/fonts/outline-icons.woff2"],"node_modules/semantic-ui-css/themes/default/assets/fonts/outline-icons.woff2"],"./themes/default/assets/fonts/outline-icons.woff":[["outline-icons.0cef42d2.woff","node_modules/semantic-ui-css/themes/default/assets/fonts/outline-icons.woff"],"node_modules/semantic-ui-css/themes/default/assets/fonts/outline-icons.woff"],"./themes/default/assets/fonts/outline-icons.ttf":[["outline-icons.45676560.ttf","node_modules/semantic-ui-css/themes/default/assets/fonts/outline-icons.ttf"],"node_modules/semantic-ui-css/themes/default/assets/fonts/outline-icons.ttf"],"./themes/default/assets/fonts/outline-icons.svg":[["outline-icons.2d51f992.svg","node_modules/semantic-ui-css/themes/default/assets/fonts/outline-icons.svg"],"node_modules/semantic-ui-css/themes/default/assets/fonts/outline-icons.svg"],"./themes/default/assets/fonts/brand-icons.eot":[["brand-icons.b04c53a6.eot","node_modules/semantic-ui-css/themes/default/assets/fonts/brand-icons.eot"],"node_modules/semantic-ui-css/themes/default/assets/fonts/brand-icons.eot"],"./themes/default/assets/fonts/brand-icons.woff2":[["brand-icons.7356c27f.woff2","node_modules/semantic-ui-css/themes/default/assets/fonts/brand-icons.woff2"],"node_modules/semantic-ui-css/themes/default/assets/fonts/brand-icons.woff2"],"./themes/default/assets/fonts/brand-icons.woff":[["brand-icons.0aca27c8.woff","node_modules/semantic-ui-css/themes/default/assets/fonts/brand-icons.woff"],"node_modules/semantic-ui-css/themes/default/assets/fonts/brand-icons.woff"],"./themes/default/assets/fonts/brand-icons.ttf":[["brand-icons.e7547f6b.ttf","node_modules/semantic-ui-css/themes/default/assets/fonts/brand-icons.ttf"],"node_modules/semantic-ui-css/themes/default/assets/fonts/brand-icons.ttf"],"./themes/default/assets/fonts/brand-icons.svg":[["brand-icons.b8665107.svg","node_modules/semantic-ui-css/themes/default/assets/fonts/brand-icons.svg"],"node_modules/semantic-ui-css/themes/default/assets/fonts/brand-icons.svg"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/App.scss":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -76243,6 +76249,7 @@ var MainHeader = /*#__PURE__*/function (_React$Component) {
         centered: true,
         alt: "header burger"
       })), /*#__PURE__*/_react.default.createElement(_semanticUiReact.Dropdown, {
+        alt: "Header burger",
         className: "header-burger",
         icon: "bars"
       }, /*#__PURE__*/_react.default.createElement(_semanticUiReact.DropdownMenu, null, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
@@ -77843,7 +77850,8 @@ var About = function About() {
   }, /*#__PURE__*/_react.default.createElement(_semanticUiReact.Header, null, "Tali with her Band"), /*#__PURE__*/_react.default.createElement(_semanticUiReact.Embed, {
     id: "lMFN3UKNBh8",
     placeholder: _placeholderVid.default,
-    source: "youtube"
+    source: "youtube",
+    alt: "Tali with her band."
   }))));
 };
 
@@ -78214,6 +78222,8 @@ var _reactDom = _interopRequireDefault(require("react-dom"));
 
 var _reactRouterDom = require("react-router-dom");
 
+require("semantic-ui-css/semantic.min.css");
+
 var _App = _interopRequireDefault(require("./src/App"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -78221,7 +78231,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var mountNode = document.getElementById("app");
 
 _reactDom.default.render( /*#__PURE__*/_react.default.createElement(_reactRouterDom.BrowserRouter, null, /*#__PURE__*/_react.default.createElement(_App.default, null)), mountNode);
-},{"react":"node_modules/react/index.js","react-dom":"node_modules/react-dom/index.js","react-router-dom":"node_modules/react-router-dom/esm/react-router-dom.js","./src/App":"src/App.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","react-dom":"node_modules/react-dom/index.js","react-router-dom":"node_modules/react-router-dom/esm/react-router-dom.js","semantic-ui-css/semantic.min.css":"node_modules/semantic-ui-css/semantic.min.css","./src/App":"src/App.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
