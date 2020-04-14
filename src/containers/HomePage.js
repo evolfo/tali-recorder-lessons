@@ -1,8 +1,11 @@
 import React from "react";
-import {Grid, GridColumn, Header, Button} from "semantic-ui-react";
+import { Grid, GridColumn, Header, Embed } from "semantic-ui-react";
 import Carousel from "semantic-ui-carousel-react";
 import elements from '../utilities/carousel-elements'
 import LessonButton from '../components/LessonButton'
+
+import placeholderUlab from "../../img/placeholder-ulab.jpg";
+import placeholderNick from "../../img/placeholder-nick.jpg";
 
 class HomePage extends React.Component {
   render() {
@@ -34,26 +37,30 @@ class HomePage extends React.Component {
             See Tali in Action
           </Header>
           <GridColumn tablet={16} computer={8}>
-            <div class="iframe-container">
-              <iframe
+            <div class="">
+              <Embed
                 width="560"
                 height="315"
-                src="https://www.youtube-nocookie.com/embed/AUeUZdfiuJ0"
+                id="AUeUZdfiuJ0"
                 frameborder="0"
+                placeholder={placeholderNick}
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen
+                source="youtube"
               />
             </div>
           </GridColumn>
           <GridColumn tablet={16} computer={8}>
-            <div class="iframe-container">
-              <iframe
+            <div class="">
+              <Embed
                 width="560"
                 height="315"
-                src="https://www.youtube-nocookie.com/embed/6YTo9RjX6j8"
+                id="6YTo9RjX6j8"
                 frameborder="0"
+                placeholder={placeholderUlab}
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen
+                source="youtube"
               />
             </div>
           </GridColumn>

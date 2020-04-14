@@ -77660,7 +77660,11 @@ var elements = [{
 }];
 var _default = elements;
 exports.default = _default;
-},{"react":"node_modules/react/index.js"}],"src/containers/HomePage.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js"}],"img/placeholder-ulab.jpg":[function(require,module,exports) {
+module.exports = "/placeholder-ulab.19d9dee3.jpg";
+},{}],"img/placeholder-nick.jpg":[function(require,module,exports) {
+module.exports = "/placeholder-nick.ed5fe817.jpg";
+},{}],"src/containers/HomePage.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -77687,6 +77691,10 @@ var _semanticUiCarouselReact = _interopRequireDefault(require("semantic-ui-carou
 var _carouselElements = _interopRequireDefault(require("../utilities/carousel-elements"));
 
 var _LessonButton = _interopRequireDefault(require("../components/LessonButton"));
+
+var _placeholderUlab = _interopRequireDefault(require("../../img/placeholder-ulab.jpg"));
+
+var _placeholderNick = _interopRequireDefault(require("../../img/placeholder-nick.jpg"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -77731,26 +77739,30 @@ var HomePage = /*#__PURE__*/function (_React$Component) {
         tablet: 16,
         computer: 8
       }, /*#__PURE__*/_react.default.createElement("div", {
-        class: "iframe-container"
-      }, /*#__PURE__*/_react.default.createElement("iframe", {
+        class: ""
+      }, /*#__PURE__*/_react.default.createElement(_semanticUiReact.Embed, {
         width: "560",
         height: "315",
-        src: "https://www.youtube-nocookie.com/embed/AUeUZdfiuJ0",
+        id: "AUeUZdfiuJ0",
         frameborder: "0",
+        placeholder: _placeholderNick.default,
         allow: "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture",
-        allowfullscreen: true
+        allowfullscreen: true,
+        source: "youtube"
       }))), /*#__PURE__*/_react.default.createElement(_semanticUiReact.GridColumn, {
         tablet: 16,
         computer: 8
       }, /*#__PURE__*/_react.default.createElement("div", {
-        class: "iframe-container"
-      }, /*#__PURE__*/_react.default.createElement("iframe", {
+        class: ""
+      }, /*#__PURE__*/_react.default.createElement(_semanticUiReact.Embed, {
         width: "560",
         height: "315",
-        src: "https://www.youtube-nocookie.com/embed/6YTo9RjX6j8",
+        id: "6YTo9RjX6j8",
         frameborder: "0",
+        placeholder: _placeholderUlab.default,
         allow: "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture",
-        allowfullscreen: true
+        allowfullscreen: true,
+        source: "youtube"
       })))), /*#__PURE__*/_react.default.createElement(_semanticUiReact.Grid, {
         centered: true,
         id: "testimonials"
@@ -77776,7 +77788,7 @@ var HomePage = /*#__PURE__*/function (_React$Component) {
 
 var _default = HomePage;
 exports.default = _default;
-},{"@babel/runtime/helpers/classCallCheck":"node_modules/@babel/runtime/helpers/classCallCheck.js","@babel/runtime/helpers/createClass":"node_modules/@babel/runtime/helpers/createClass.js","@babel/runtime/helpers/possibleConstructorReturn":"node_modules/@babel/runtime/helpers/possibleConstructorReturn.js","@babel/runtime/helpers/getPrototypeOf":"node_modules/@babel/runtime/helpers/getPrototypeOf.js","@babel/runtime/helpers/inherits":"node_modules/@babel/runtime/helpers/inherits.js","react":"node_modules/react/index.js","semantic-ui-react":"node_modules/semantic-ui-react/dist/es/index.js","semantic-ui-carousel-react":"node_modules/semantic-ui-carousel-react/dist/index.js","../utilities/carousel-elements":"src/utilities/carousel-elements.js","../components/LessonButton":"src/components/LessonButton.js"}],"img/about1.jpg":[function(require,module,exports) {
+},{"@babel/runtime/helpers/classCallCheck":"node_modules/@babel/runtime/helpers/classCallCheck.js","@babel/runtime/helpers/createClass":"node_modules/@babel/runtime/helpers/createClass.js","@babel/runtime/helpers/possibleConstructorReturn":"node_modules/@babel/runtime/helpers/possibleConstructorReturn.js","@babel/runtime/helpers/getPrototypeOf":"node_modules/@babel/runtime/helpers/getPrototypeOf.js","@babel/runtime/helpers/inherits":"node_modules/@babel/runtime/helpers/inherits.js","react":"node_modules/react/index.js","semantic-ui-react":"node_modules/semantic-ui-react/dist/es/index.js","semantic-ui-carousel-react":"node_modules/semantic-ui-carousel-react/dist/index.js","../utilities/carousel-elements":"src/utilities/carousel-elements.js","../components/LessonButton":"src/components/LessonButton.js","../../img/placeholder-ulab.jpg":"img/placeholder-ulab.jpg","../../img/placeholder-nick.jpg":"img/placeholder-nick.jpg"}],"img/about1.jpg":[function(require,module,exports) {
 module.exports = "/about1.0215d38a.jpg";
 },{}],"img/placeholder-vid.jpg":[function(require,module,exports) {
 module.exports = "/placeholder-vid.3ea86051.jpg";
@@ -77928,7 +77940,19 @@ var Contact = /*#__PURE__*/function (_React$Component) {
 
 var _default = Contact;
 exports.default = _default;
-},{"@babel/runtime/helpers/classCallCheck":"node_modules/@babel/runtime/helpers/classCallCheck.js","@babel/runtime/helpers/createClass":"node_modules/@babel/runtime/helpers/createClass.js","@babel/runtime/helpers/possibleConstructorReturn":"node_modules/@babel/runtime/helpers/possibleConstructorReturn.js","@babel/runtime/helpers/getPrototypeOf":"node_modules/@babel/runtime/helpers/getPrototypeOf.js","@babel/runtime/helpers/inherits":"node_modules/@babel/runtime/helpers/inherits.js","react":"node_modules/react/index.js","semantic-ui-react":"node_modules/semantic-ui-react/dist/es/index.js"}],"src/containers/Tutorials.js":[function(require,module,exports) {
+},{"@babel/runtime/helpers/classCallCheck":"node_modules/@babel/runtime/helpers/classCallCheck.js","@babel/runtime/helpers/createClass":"node_modules/@babel/runtime/helpers/createClass.js","@babel/runtime/helpers/possibleConstructorReturn":"node_modules/@babel/runtime/helpers/possibleConstructorReturn.js","@babel/runtime/helpers/getPrototypeOf":"node_modules/@babel/runtime/helpers/getPrototypeOf.js","@babel/runtime/helpers/inherits":"node_modules/@babel/runtime/helpers/inherits.js","react":"node_modules/react/index.js","semantic-ui-react":"node_modules/semantic-ui-react/dist/es/index.js"}],"img/tutorials/RB1edit.jpg":[function(require,module,exports) {
+module.exports = "/RB1edit.751dc7b6.jpg";
+},{}],"img/tutorials/RB2edit.jpg":[function(require,module,exports) {
+module.exports = "/RB2edit.5cb990b3.jpg";
+},{}],"img/tutorials/RB3edit.jpg":[function(require,module,exports) {
+module.exports = "/RB3edit.5661855b.jpg";
+},{}],"img/tutorials/RB4edit.jpg":[function(require,module,exports) {
+module.exports = "/RB4edit.6bb3f9db.jpg";
+},{}],"img/tutorials/RB5edit.jpg":[function(require,module,exports) {
+module.exports = "/RB5edit.c96e879a.jpg";
+},{}],"img/tutorials/RB6edit.jpg":[function(require,module,exports) {
+module.exports = "/RB6edit.c9d2b00c.jpg";
+},{}],"src/containers/Tutorials.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -77939,6 +77963,18 @@ exports.default = void 0;
 var _react = _interopRequireDefault(require("react"));
 
 var _semanticUiReact = require("semantic-ui-react");
+
+var _RB1edit = _interopRequireDefault(require("../../img/tutorials/RB1edit.jpg"));
+
+var _RB2edit = _interopRequireDefault(require("../../img/tutorials/RB2edit.jpg"));
+
+var _RB3edit = _interopRequireDefault(require("../../img/tutorials/RB3edit.jpg"));
+
+var _RB4edit = _interopRequireDefault(require("../../img/tutorials/RB4edit.jpg"));
+
+var _RB5edit = _interopRequireDefault(require("../../img/tutorials/RB5edit.jpg"));
+
+var _RB6edit = _interopRequireDefault(require("../../img/tutorials/RB6edit.jpg"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -77951,80 +77987,92 @@ var Tutorials = function Tutorials() {
     computer: 8,
     mobile: 16
   }, /*#__PURE__*/_react.default.createElement("h2", null, "Meet Tali"), /*#__PURE__*/_react.default.createElement("div", {
-    className: "iframe-container"
-  }, /*#__PURE__*/_react.default.createElement("iframe", {
+    className: ""
+  }, /*#__PURE__*/_react.default.createElement(_semanticUiReact.Embed, {
     width: "560",
     height: "315",
-    src: "https://www.youtube-nocookie.com/embed/I8cdUjH8V_M",
+    placeholder: _RB1edit.default,
+    id: "I8cdUjH8V_M",
     frameborder: "0",
     allow: "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture",
-    allowfullscreen: true
+    allowfullscreen: true,
+    source: "youtube"
   }))), /*#__PURE__*/_react.default.createElement(_semanticUiReact.GridColumn, {
     computer: 8,
     mobile: 16
   }, /*#__PURE__*/_react.default.createElement("h2", null, "Posture, Breath, and Articulation"), /*#__PURE__*/_react.default.createElement("div", {
-    className: "iframe-container"
-  }, /*#__PURE__*/_react.default.createElement("iframe", {
+    className: ""
+  }, /*#__PURE__*/_react.default.createElement(_semanticUiReact.Embed, {
     width: "560",
     height: "315",
-    src: "https://www.youtube-nocookie.com/embed/cE7lqAoCMfQ",
+    placeholder: _RB2edit.default,
+    id: "cE7lqAoCMfQ",
     frameborder: "0",
     allow: "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture",
-    allowfullscreen: true
+    allowfullscreen: true,
+    source: "youtube"
   })))), /*#__PURE__*/_react.default.createElement(_semanticUiReact.GridRow, null, /*#__PURE__*/_react.default.createElement(_semanticUiReact.GridColumn, {
     computer: 8,
     mobile: 16
   }, /*#__PURE__*/_react.default.createElement("h2", null, "Playing \"B\", \"A\", and \"G\""), /*#__PURE__*/_react.default.createElement("div", {
-    className: "iframe-container"
-  }, /*#__PURE__*/_react.default.createElement("iframe", {
+    className: ""
+  }, /*#__PURE__*/_react.default.createElement(_semanticUiReact.Embed, {
     width: "560",
     height: "315",
-    src: "https://www.youtube-nocookie.com/embed/jbArad_r4B4",
+    placeholder: _RB3edit.default,
+    id: "jbArad_r4B4",
     frameborder: "0",
     allow: "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture",
-    allowfullscreen: true
+    allowfullscreen: true,
+    source: "youtube"
   }))), /*#__PURE__*/_react.default.createElement(_semanticUiReact.GridColumn, {
     computer: 8,
     mobile: 16
   }, /*#__PURE__*/_react.default.createElement("h2", null, "Playing High \"C\" and \"D\""), /*#__PURE__*/_react.default.createElement("div", {
-    className: "iframe-container"
-  }, /*#__PURE__*/_react.default.createElement("iframe", {
+    className: ""
+  }, /*#__PURE__*/_react.default.createElement(_semanticUiReact.Embed, {
     width: "560",
     height: "315",
-    src: "https://www.youtube-nocookie.com/embed/7uho-etcCoI",
+    placeholder: _RB4edit.default,
+    id: "7uho-etcCoI",
     frameborder: "0",
     allow: "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture",
-    allowfullscreen: true
+    allowfullscreen: true,
+    source: "youtube"
   })))), /*#__PURE__*/_react.default.createElement(_semanticUiReact.GridRow, null, /*#__PURE__*/_react.default.createElement(_semanticUiReact.GridColumn, {
     computer: 8,
     mobile: 16
   }, /*#__PURE__*/_react.default.createElement("h2", null, "Playing \"C\", \"D\", \"E\", and \"F\""), /*#__PURE__*/_react.default.createElement("div", {
-    className: "iframe-container"
-  }, /*#__PURE__*/_react.default.createElement("iframe", {
+    className: ""
+  }, /*#__PURE__*/_react.default.createElement(_semanticUiReact.Embed, {
     width: "560",
     height: "315",
-    src: "https://www.youtube-nocookie.com/embed/pRbAKAPOcos",
+    placeholder: _RB5edit.default,
+    id: "pRbAKAPOcos",
     frameborder: "0",
     allow: "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture",
-    allowfullscreen: true
+    allowfullscreen: true,
+    source: "youtube"
   }))), /*#__PURE__*/_react.default.createElement(_semanticUiReact.GridColumn, {
     computer: 8,
     mobile: 16
   }, /*#__PURE__*/_react.default.createElement("h2", null, "Playing the C-Major Scale"), /*#__PURE__*/_react.default.createElement("div", {
-    className: "iframe-container"
-  }, /*#__PURE__*/_react.default.createElement("iframe", {
+    className: ""
+  }, /*#__PURE__*/_react.default.createElement(_semanticUiReact.Embed, {
     width: "560",
     height: "315",
-    src: "https://www.youtube-nocookie.com/embed/jCLX7N0m2rY",
+    placeholder: _RB6edit.default,
+    id: "jCLX7N0m2rY",
     frameborder: "0",
     allow: "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture",
-    allowfullscreen: true
+    allowfullscreen: true,
+    source: "youtube"
   }))))));
 };
 
 var _default = Tutorials;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","semantic-ui-react":"node_modules/semantic-ui-react/dist/es/index.js"}],"src/Router.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","semantic-ui-react":"node_modules/semantic-ui-react/dist/es/index.js","../../img/tutorials/RB1edit.jpg":"img/tutorials/RB1edit.jpg","../../img/tutorials/RB2edit.jpg":"img/tutorials/RB2edit.jpg","../../img/tutorials/RB3edit.jpg":"img/tutorials/RB3edit.jpg","../../img/tutorials/RB4edit.jpg":"img/tutorials/RB4edit.jpg","../../img/tutorials/RB5edit.jpg":"img/tutorials/RB5edit.jpg","../../img/tutorials/RB6edit.jpg":"img/tutorials/RB6edit.jpg"}],"src/Router.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -78198,7 +78246,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56048" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60302" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

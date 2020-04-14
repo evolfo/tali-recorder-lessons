@@ -1,5 +1,5 @@
 import React from 'react'
-import { Grid, GridColumn, Image, Header, Container, Embed, GridRow } from "semantic-ui-react";
+import { Grid, GridColumn, Image, Header, Container, Embed } from "semantic-ui-react";
 
 import aboutImg from "../../img/about1.jpg";
 import placeholderVid from "../../img/placeholder-vid.jpg"

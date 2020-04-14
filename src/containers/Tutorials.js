@@ -1,6 +1,13 @@
 import React from "react";
 
-import {Container, Grid, GridColumn, GridRow, Header} from 'semantic-ui-react'
+import {Container, Grid, GridColumn, GridRow, Header, Embed} from 'semantic-ui-react'
+
+import placeholder1 from "../../img/tutorials/RB1edit.jpg"
+import placeholder2 from "../../img/tutorials/RB2edit.jpg"
+import placeholder3 from "../../img/tutorials/RB3edit.jpg"
+import placeholder4 from "../../img/tutorials/RB4edit.jpg"
+import placeholder5 from "../../img/tutorials/RB5edit.jpg"
+import placeholder6 from "../../img/tutorials/RB6edit.jpg"
 
 const Tutorials = () => {
     return (
@@ -17,27 +24,31 @@ const Tutorials = () => {
           <GridRow>
             <GridColumn computer={8} mobile={16}>
               <h2>Meet Tali</h2>
-              <div className="iframe-container">
-                <iframe
+              <div className="">
+                <Embed
                   width="560"
                   height="315"
-                  src="https://www.youtube-nocookie.com/embed/I8cdUjH8V_M"
+                  placeholder={placeholder1}
+                  id="I8cdUjH8V_M"
                   frameborder="0"
                   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen
+                  source="youtube"
                 />
               </div>
             </GridColumn>
             <GridColumn computer={8} mobile={16}>
               <h2>Posture, Breath, and Articulation</h2>
-              <div className="iframe-container">
-                <iframe
+              <div className="">
+                <Embed
                   width="560"
                   height="315"
-                  src="https://www.youtube-nocookie.com/embed/cE7lqAoCMfQ"
+                  placeholder={placeholder2}
+                  id="cE7lqAoCMfQ"
                   frameborder="0"
                   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen
+                  source="youtube"
                 />
               </div>
             </GridColumn>
@@ -45,27 +56,31 @@ const Tutorials = () => {
           <GridRow>
             <GridColumn computer={8} mobile={16}>
               <h2>Playing "B", "A", and "G"</h2>
-              <div className="iframe-container">
-                <iframe
+              <div className="">
+                <Embed
                   width="560"
                   height="315"
-                  src="https://www.youtube-nocookie.com/embed/jbArad_r4B4"
+                  placeholder={placeholder3}
+                  id="jbArad_r4B4"
                   frameborder="0"
                   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen
+                  source="youtube"
                 />
               </div>
             </GridColumn>
             <GridColumn computer={8} mobile={16}>
               <h2>Playing High "C" and "D"</h2>
-              <div className="iframe-container">
-                <iframe
+              <div className="">
+                <Embed
                   width="560"
                   height="315"
-                  src="https://www.youtube-nocookie.com/embed/7uho-etcCoI"
+                  placeholder={placeholder4}
+                  id="7uho-etcCoI"
                   frameborder="0"
                   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen
+                  source="youtube"
                 />
               </div>
             </GridColumn>
@@ -73,27 +88,31 @@ const Tutorials = () => {
           <GridRow>
             <GridColumn computer={8} mobile={16}>
               <h2>Playing "C", "D", "E", and "F"</h2>
-              <div className="iframe-container">
-                <iframe
+              <div className="">
+                <Embed
                   width="560"
                   height="315"
-                  src="https://www.youtube-nocookie.com/embed/pRbAKAPOcos"
+                  placeholder={placeholder5}
+                  id="pRbAKAPOcos"
                   frameborder="0"
                   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen
+                  source="youtube"
                 />
               </div>
             </GridColumn>
             <GridColumn computer={8} mobile={16}>
               <h2>Playing the C-Major Scale</h2>
-              <div className="iframe-container">
-                <iframe
+              <div className="">
+                <Embed
                   width="560"
                   height="315"
-                  src="https://www.youtube-nocookie.com/embed/jCLX7N0m2rY"
+                  placeholder={placeholder6}
+                  id="jCLX7N0m2rY"
                   frameborder="0"
                   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen
+                  source="youtube"
                 />
               </div>
             </GridColumn>
