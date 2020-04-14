@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel build index.html"
+    "build": "parcel build index.html",
+    "sitemap": "babel-node sitemap-builder.js"
   },
   "author": "Angelo Spampinato",
   "license": "ISC",
@@ -15,17 +16,23 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.1.2",
+    "react-router-sitemap": "^1.2.0",
+    "react-router-sitemap-builder": "^1.1.1",
     "semantic-ui-carousel-react": "^1.1.1",
     "semantic-ui-react": "^0.88.2"
   },
   "devDependencies": {
+    "@babel/cli": "^7.8.4",
     "@babel/core": "^7.9.0",
     "@babel/plugin-proposal-class-properties": "^7.8.3",
     "@babel/plugin-transform-runtime": "^7.9.0",
     "@babel/preset-env": "^7.9.0",
     "@babel/preset-react": "^7.9.1",
+    "@babel/register": "^7.9.0",
     "@babel/runtime": "^7.9.2",
     "babel-plugin-transform-class-properties": "^6.24.1",
-    "parcel-bundler": "^1.12.4"
+    "parcel-bundler": "^1.12.4",
+    "react-router-sitemap": "^1.2.0",
+    "react-router-sitemap-builder": "^1.1.1"
   }
 }
