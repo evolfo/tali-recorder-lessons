@@ -77723,7 +77723,7 @@ var HomePage = /*#__PURE__*/function (_React$Component) {
         className: "centered-text"
       }, "Ever wondered \u2013 \u201CCan I actually play that on a\xA0recorder?\u201D"), /*#__PURE__*/_react.default.createElement("p", {
         className: "centered-text"
-      }, "The answer is \u2013 yes. NYC based Award-winning recorder player Tali Rubinstein will teach you\xA0how."), /*#__PURE__*/_react.default.createElement(_LessonButton.default, null))), /*#__PURE__*/_react.default.createElement(_semanticUiReact.Grid, {
+      }, "The answer is \u2013 yes. NYC based Award-winning recorder player Tali Rubinstein will teach you\xA0how."), /*#__PURE__*/_react.default.createElement("p", null, "Book a free 15 minute trial lesson now!"), /*#__PURE__*/_react.default.createElement(_LessonButton.default, null))), /*#__PURE__*/_react.default.createElement(_semanticUiReact.Grid, {
         id: "tutorial-videos"
       }, /*#__PURE__*/_react.default.createElement(_semanticUiReact.Header, {
         className: "main-about-text video-header"
