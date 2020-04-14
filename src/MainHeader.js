@@ -2,6 +2,8 @@ import React from 'react'
 import { Menu, Segment, Image, Button, Dropdown, DropdownMenu, DropdownItem } from 'semantic-ui-react'
 import { Link } from "react-router-dom";
 
+import LessonButton from './components/LessonButton'
+
 import taliLogo from "../img/talilogo.png"
 
 class MainHeader extends React.Component {
@@ -9,11 +11,17 @@ class MainHeader extends React.Component {
   state = { activeItem: "home" }
 
   handleMenuItemClick = (e, { name }) => {
-    this.setState({ activeItem: name })
+    this.setState({ activeItem: name }, () => {
+      if (this.state.activeItem === "home") {
+        window.location.reload(false);
+      }
+    })
   };
 
   handleHeaderImgClick = (e) => {
-    this.setState({ activeItem: "home"})
+    this.setState({ activeItem: "home"}, () => {
+      window.location.reload(false);
+    })
   }
 
   componentDidMount() {
@@ -72,13 +80,7 @@ class MainHeader extends React.Component {
               />
             </Link>
             <Link to="#">
-              <Button
-                primary
-                className="timify-button"
-                data-account-id="5e82b61f2ce85164d0d5152b"
-              >
-                Book a Lesson
-              </Button>
+              <LessonButton />
             </Link>
           </div>
           <Link to="/">

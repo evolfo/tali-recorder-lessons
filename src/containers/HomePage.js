@@ -1,25 +1,10 @@
 import React from "react";
 import {Grid, GridColumn, Header, Button} from "semantic-ui-react";
 import Carousel from "semantic-ui-carousel-react";
-import {Link} from 'react-router-dom'
 import elements from '../utilities/carousel-elements'
+import LessonButton from '../components/LessonButton'
 
 class HomePage extends React.Component {
-
-  // <script async type="text/javascript" src="//book.timify.com/widget/widget.min.js" data-lang="en" data-id="5e82b61f2ce85164d0d5152b" id="timify-widget" data-position="flexible"></script>
-  componentDidMount(){
-    const script = document.createElement("script")
-    script.src = "//book.timify.com/widget/widget.min.js"
-    script.async = true
-    script.id = "timify-widget"
-    script.dataset.id = "5e82b61f2ce85164d0d5152b"
-    script.dataset.position = "flexible"
-    script.dataset.lang = "en"
-
-    document.body.appendChild(script)
-    console.log(script)
-  }
-
   render() {
     return (
       <>
@@ -40,13 +25,7 @@ class HomePage extends React.Component {
               The answer is – yes. NYC based Award-winning recorder player Tali
               Rubinstein will teach you&nbsp;how.
             </p>
-              <Button
-                className="timify-button"
-                data-account-id="5e82b61f2ce85164d0d5152b"
-                primary
-              >
-                Book a Lesson Now
-              </Button>
+            <LessonButton />
           </GridColumn>
         </Grid>
         <Grid id="tutorial-videos">
