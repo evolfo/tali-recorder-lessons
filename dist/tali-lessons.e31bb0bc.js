@@ -76240,7 +76240,8 @@ var MainHeader = /*#__PURE__*/function (_React$Component) {
         active: activeItem === "home",
         onClick: this.handleHeaderImgClick,
         src: _talilogo.default,
-        centered: true
+        centered: true,
+        alt: "header burger"
       })), /*#__PURE__*/_react.default.createElement(_semanticUiReact.Dropdown, {
         className: "header-burger",
         icon: "bars"
@@ -77748,7 +77749,8 @@ var HomePage = /*#__PURE__*/function (_React$Component) {
         placeholder: _placeholderNick.default,
         allow: "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture",
         allowfullscreen: true,
-        source: "youtube"
+        source: "youtube",
+        alt: "Nickelodeon YouTube Recorder Tutorial"
       }))), /*#__PURE__*/_react.default.createElement(_semanticUiReact.GridColumn, {
         tablet: 16,
         computer: 8
@@ -77762,7 +77764,8 @@ var HomePage = /*#__PURE__*/function (_React$Component) {
         placeholder: _placeholderUlab.default,
         allow: "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture",
         allowfullscreen: true,
-        source: "youtube"
+        source: "youtube",
+        alt: "Ulab YouTube Recorder Tutorial"
       })))), /*#__PURE__*/_react.default.createElement(_semanticUiReact.Grid, {
         centered: true,
         id: "testimonials"

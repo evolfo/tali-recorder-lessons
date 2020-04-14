@@ -47,6 +47,7 @@ class HomePage extends React.Component {
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen
                 source="youtube"
+                alt="Nickelodeon YouTube Recorder Tutorial"
               />
             </div>
           </GridColumn>
@@ -61,6 +62,7 @@ class HomePage extends React.Component {
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen
                 source="youtube"
+                alt="Ulab YouTube Recorder Tutorial"
               />
             </div>
           </GridColumn>

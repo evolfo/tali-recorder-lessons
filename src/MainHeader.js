@@ -91,6 +91,7 @@ class MainHeader extends React.Component {
               onClick={this.handleHeaderImgClick}
               src={taliLogo}
               centered
+              alt="header burger"
             />
           </Link>
           <Dropdown className="header-burger" icon="bars">
