@@ -32,8 +32,6 @@
     "@babel/runtime": "^7.9.2",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "parcel-bundler": "^1.12.4",
-    "parcel-plugin-purgecss": "^2.1.3",
-    "purgecss": "^2.1.2",
     "react-router-sitemap": "^1.2.0",
     "react-router-sitemap-builder": "^1.1.1"
   }
