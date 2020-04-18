@@ -11,17 +11,11 @@ class MainHeader extends React.Component {
   state = { activeItem: "home" }
 
   handleMenuItemClick = (e, { name }) => {
-    this.setState({ activeItem: name }, () => {
-      if (this.state.activeItem === "home") {
-        window.location.reload(false);
-      }
-    })
+    this.setState({ activeItem: name })
   };
 
   handleHeaderImgClick = (e) => {
-    this.setState({ activeItem: "home"}, () => {
-      window.location.reload(false);
-    })
+    this.setState({ activeItem: "home"})
   }
 
   componentDidMount() {
@@ -79,7 +73,7 @@ class MainHeader extends React.Component {
                 onClick={this.handleMenuItemClick}
               />
             </Link>
-            <Link to="#">
+            <Link to="/book-lesson">
               <LessonButton />
             </Link>
           </div>
@@ -108,10 +102,9 @@ class MainHeader extends React.Component {
               <Link to="/contact">
                 <DropdownItem text="Contact" />
               </Link>
-              <Link>
+              <Link to="book-lesson">
                 <DropdownItem
                   className="timify-button"
-                  data-account-id="5e82b61f2ce85164d0d5152b"
                   text="Book a Lesson"
                 />
               </Link>

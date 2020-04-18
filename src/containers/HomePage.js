@@ -1,8 +1,9 @@
 import React from "react";
-import { Grid, GridColumn, Header, Embed } from "semantic-ui-react";
+import { Grid, GridColumn, Header, Embed} from "semantic-ui-react";
 import Carousel from "semantic-ui-carousel-react";
 import elements from '../utilities/carousel-elements'
 import LessonButton from '../components/LessonButton'
+import { Link } from "react-router-dom";
 
 import placeholderUlab from "../../img/placeholder-ulab.jpg";
 import placeholderNick from "../../img/placeholder-nick.jpg";
@@ -29,7 +30,9 @@ class HomePage extends React.Component {
               Rubinstein will teach you&nbsp;how.
             </p>
             <p>Book a free 15 minute trial lesson now!</p>
-            <LessonButton />
+            <Link to="/book-lesson">
+              <LessonButton />
+            </Link>
           </GridColumn>
         </Grid>
         <Grid id="tutorial-videos">

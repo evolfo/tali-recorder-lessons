@@ -12,6 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "containers": "0.0.1",
+    "iframe-resizer-react": "^1.0.3",
     "puppeteer-core": "^2.1.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
