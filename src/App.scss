@@ -627,6 +627,25 @@ html, body {
     }
 }
 
+// BLOGS
+#blog-wrapper {
+    @include breakpoint(tablet) {
+        padding: 3rem;
+    }
+
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    margin: 0 auto;
+    max-width: 800px;
+
+    img {
+        max-width: 100%;
+        height: auto;
+        text-align: center;
+        display: block;
+    }
+}
+
 // RESPONSIVE IFRAME
 
 .iframe-container {

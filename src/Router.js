@@ -6,6 +6,7 @@ import About from './containers/About';
 import BookLesson from './containers/BookLesson';
 import Contact from './containers/Contact';
 import Tutorials from './containers/Tutorials'
+import BlogContainer from './containers/BlogContainer';
 
 const Router = () => {
     return (
@@ -15,6 +16,7 @@ const Router = () => {
         <Route path="/tutorials" component={Tutorials} />
         <Route path="/book-lesson" component={BookLesson} />
         <Route path="/contact" component={Contact} />
+        <Route path="/blog" component={BlogContainer} />
       </Switch>
     );
 }

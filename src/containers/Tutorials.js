@@ -30,9 +30,9 @@ const Tutorials = () => {
                   height="315"
                   placeholder={placeholder1}
                   id="I8cdUjH8V_M"
-                  frameborder="0"
+                  frameBorder="0"
                   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen
+                  allowFullScreen
                   source="youtube"
                 />
               </div>
@@ -45,9 +45,9 @@ const Tutorials = () => {
                   height="315"
                   placeholder={placeholder2}
                   id="cE7lqAoCMfQ"
-                  frameborder="0"
+                  frameBorder="0"
                   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen
+                  allowFullScreen
                   source="youtube"
                 />
               </div>
@@ -62,9 +62,9 @@ const Tutorials = () => {
                   height="315"
                   placeholder={placeholder3}
                   id="jbArad_r4B4"
-                  frameborder="0"
+                  frameBorder="0"
                   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen
+                  allowFullScreen
                   source="youtube"
                 />
               </div>
@@ -77,9 +77,9 @@ const Tutorials = () => {
                   height="315"
                   placeholder={placeholder4}
                   id="7uho-etcCoI"
-                  frameborder="0"
+                  frameBorder="0"
                   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen
+                  allowFullScreen
                   source="youtube"
                 />
               </div>
@@ -94,9 +94,9 @@ const Tutorials = () => {
                   height="315"
                   placeholder={placeholder5}
                   id="pRbAKAPOcos"
-                  frameborder="0"
+                  frameBorder="0"
                   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen
+                  allowFullScreen
                   source="youtube"
                 />
               </div>
@@ -109,9 +109,9 @@ const Tutorials = () => {
                   height="315"
                   placeholder={placeholder6}
                   id="jCLX7N0m2rY"
-                  frameborder="0"
+                  frameBorder="0"
                   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen
+                  allowFullScreen
                   source="youtube"
                 />
               </div>

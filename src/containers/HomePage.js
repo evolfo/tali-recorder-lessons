@@ -40,30 +40,30 @@ class HomePage extends React.Component {
             See Tali in Action
           </Header>
           <GridColumn tablet={16} computer={8}>
-            <div class="">
+            <div className="">
               <Embed
                 width="560"
                 height="315"
                 id="AUeUZdfiuJ0"
-                frameborder="0"
+                frameBorder="0"
                 placeholder={placeholderNick}
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
+                allowFullScreen
                 source="youtube"
                 alt="Nickelodeon YouTube Recorder Tutorial"
               />
             </div>
           </GridColumn>
           <GridColumn tablet={16} computer={8}>
-            <div class="">
+            <div className="">
               <Embed
                 width="560"
                 height="315"
                 id="6YTo9RjX6j8"
-                frameborder="0"
+                frameBorder="0"
                 placeholder={placeholderUlab}
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
+                allowFullScreen
                 source="youtube"
                 alt="Ulab YouTube Recorder Tutorial"
               />

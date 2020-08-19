@@ -6,7 +6,6 @@ const BookLesson = () => {
 
   const resizeIframe = (e) => {
     const iframe = document.querySelector('iframe')
-    console.log('hi')
   }
 
   return (
