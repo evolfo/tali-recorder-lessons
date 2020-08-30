@@ -77,7 +77,7 @@ class MainHeader extends React.Component {
               <LessonButton />
             </Link>
           </div>
-          <Link to="/">
+          <Link aria-label="Homepage" to="/">
             <Image
               className="header-burger"
               name="home"
@@ -103,10 +103,7 @@ class MainHeader extends React.Component {
                 <DropdownItem text="Contact" />
               </Link>
               <Link to="book-lesson">
-                <DropdownItem
-                  className="timify-button"
-                  text="Book a Lesson"
-                />
+                <DropdownItem className="timify-button" text="Book a Lesson" />
               </Link>
             </DropdownMenu>
           </Dropdown>

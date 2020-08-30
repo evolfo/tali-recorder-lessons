@@ -7,27 +7,46 @@ const Footer = () => {
       <List horizontal>
         <List.Item>
           <List.Content>
-            <a href="https://www.facebook.com/talirubinsteinrecorder/"><Icon circular name="facebook" size="big" /></a>
+            <a
+              aria-label="Facebook"
+              href="https://www.facebook.com/talirubinsteinrecorder/"
+            >
+              <Icon circular name="facebook" size="big" />
+            </a>
           </List.Content>
         </List.Item>
         <List.Item>
           <List.Content>
-            <a href="https://twitter.com/TaliRubinstein"><Icon circular name="twitter" size="big" /></a>
+            <a aria-label="Twitter" href="https://twitter.com/TaliRubinstein">
+              <Icon circular name="twitter" size="big" />
+            </a>
           </List.Content>
         </List.Item>
         <List.Item>
           <List.Content>
-            <a href="https://www.instagram.com/talirubinstein/"><Icon circular name="instagram" size="big" /></a>
+            <a
+              aria-label="Instagram"
+              href="https://www.instagram.com/talirubinstein/"
+            >
+              <Icon circular name="instagram" size="big" />
+            </a>
           </List.Content>
         </List.Item>
         <List.Item>
           <List.Content>
-            <a href="https://www.youtube.com/user/TaliRubin"><Icon circular name="youtube" size="big" /></a>
+            <a
+              aria-label="YouTube"
+              href="https://www.youtube.com/user/TaliRubin"
+            >
+              <Icon circular name="youtube" size="big" />
+            </a>
           </List.Content>
         </List.Item>
         <List.Item>
           <List.Content>
-            <a href="https://www.talirubinstein.com"><Icon circular name="globe" size="big" /></a>
+            <a aria-label="Website" href="https://www.talirubinstein.com">
+              <Icon circular name="globe" size="big" />
+            </a>
           </List.Content>
         </List.Item>
       </List>

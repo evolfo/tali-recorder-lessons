@@ -5,9 +5,9 @@ const LessonButton = () => {
     return (
       <Button
         id="canumeet-launcher"
-        className="canumeet-launcher"
         primary
         onClick={() => CanumeetEmbed.App.toggleApp(event)}
+        aria-label="Book Lesson"
       >
         Book a Lesson Now
       </Button>
