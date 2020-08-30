@@ -88,7 +88,12 @@ class MainHeader extends React.Component {
               alt="header burger"
             />
           </Link>
-          <Dropdown alt="Header burger" className="header-burger" icon="bars">
+          <Dropdown
+            aria-label="Header burger"
+            alt="Header burger"
+            className="header-burger"
+            icon="bars"
+          >
             <DropdownMenu>
               <Link to="/">
                 <DropdownItem text="Home" />

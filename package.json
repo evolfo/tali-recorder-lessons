@@ -14,6 +14,7 @@
     "containers": "0.0.1",
     "iframe-resizer-react": "^1.0.3",
     "parcel-plugin-compress": "^2.0.2",
+    "parcel-plugin-purifycss": "^1.0.5",
     "puppeteer-core": "^2.1.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
