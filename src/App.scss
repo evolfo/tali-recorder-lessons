@@ -1,3 +1,5 @@
+/* purgecss start ignore */
+
 // Media breakpoints 
  @mixin breakpoint($point) {
   @if $point == desktop {
@@ -681,3 +683,5 @@ html, body {
         }
     }
 }
+
+/* purgecss end ignore */
