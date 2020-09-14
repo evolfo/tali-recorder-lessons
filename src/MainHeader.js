@@ -1,5 +1,5 @@
 import React from 'react'
-import { Menu, Segment, Image, Button, Dropdown, DropdownMenu, DropdownItem } from 'semantic-ui-react'
+import { Menu, Segment, Image, Dropdown, DropdownMenu, DropdownItem } from 'semantic-ui-react'
 import { Link } from "react-router-dom";
 
 import LessonButton from './components/LessonButton'

@@ -58,7 +58,9 @@ html, body {
     }
 }
 
-// HEADER + FOOTER
+/////////////////////
+// HEADER + FOOTER //
+/////////////////////
 
 #app .navbar, #footer {
     border-radius: 0;
@@ -201,7 +203,9 @@ html, body {
     }
 }
 
-// HOMEPAGE
+//////////////
+// HOMEPAGE //
+//////////////
 
 #main-background {
     background: url('/img/background1.jpg');
@@ -380,7 +384,9 @@ html, body {
     }
 }
 
-// BOOKING LESSONS
+/////////////////////
+// BOOKING LESSONS //
+/////////////////////
 
 #book-lesson {
     min-height: 717px;
@@ -396,9 +402,43 @@ html, body {
     border: none;
     width:100%;
    }
+
+   .booking-container {
+      padding: 5rem;
+      max-width: 1000px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+      @include breakpoint(smallest) {
+          display: block;
+          padding: 1rem;
+      }
+      @include breakpoint(formobile) {
+          display: block;
+          padding: 1rem;
+      }
+
+      .column {
+          padding: 2rem;
+          transition: .3s;
+
+          @include breakpoint(smallest) {
+            padding-left: 5rem;
+            padding-right: 5rem; 
+          }
+      }
+      .column:hover {
+          transform: scale(1.05);
+      }
+   }
 }
 
-// ABOUT
+///////////
+// ABOUT //
+///////////
+
 #about-wrapper {
     .about-vid-wrapper {
         background: linear-gradient(180deg,#6e859b,#4d88c1);
@@ -534,7 +574,9 @@ html, body {
     }
 }
 
-// CONTACT
+/////////////
+// CONTACT //
+/////////////
 
 #contact-wrapper {
     background: url('/img/tali-drawing.png');
@@ -591,8 +633,9 @@ html, body {
         padding-top: 1rem;
     }
 }
-
-// TUTORIALS
+///////////////
+// TUTORIALS //
+///////////////
 
 #tutorials {
     padding: 5rem;
@@ -627,8 +670,47 @@ html, body {
         padding-bottom: 2rem;
     }
 }
+/////////////
+// BUNDLES //
+/////////////
 
-// BLOGS
+#lesson-bundles {
+    .ui.header {
+        font-size: 2.9rem;
+    }
+    p {
+        font-size: 1.3rem;
+        padding-bottom: 2rem;
+    }
+
+    padding: 3rem;
+}
+
+/////////////////////////
+// BOOK BUNDLE LESSONS //
+/////////////////////////
+
+#book-bundle-lesson-container {
+    padding: 3rem;
+    text-align: center;
+
+    button {
+        padding: 3rem;
+        margin: 1rem;
+        font-size: 2rem;
+    }
+
+    .ui.header {
+        font-size: 2.9rem;
+        margin-bottom: 3rem;
+    }
+}
+
+
+///////////
+// BLOGS //
+///////////
+
 #blog-wrapper {
     @include breakpoint(tablet) {
         padding: 3rem;
