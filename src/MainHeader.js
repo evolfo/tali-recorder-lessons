@@ -95,7 +95,6 @@ class MainHeader extends React.Component {
             <Image
               className="header-burger"
               name="home"
-              active={activeItem === "home"}
               onClick={this.handleHeaderImgClick}
               src={taliLogo}
               centered

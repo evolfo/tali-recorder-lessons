@@ -15,7 +15,6 @@ class HomePage extends React.Component {
         <Grid id="main-background">
           <GridColumn
             className="tablet-display-none"
-            tablet={0}
             computer={8}
           ></GridColumn>
           <GridColumn tablet={16} computer={8} className="main-about-text">
@@ -45,7 +44,6 @@ class HomePage extends React.Component {
                 width="560"
                 height="315"
                 id="AUeUZdfiuJ0"
-                frameBorder="0"
                 placeholder={placeholderNick}
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
@@ -60,7 +58,6 @@ class HomePage extends React.Component {
                 width="560"
                 height="315"
                 id="6YTo9RjX6j8"
-                frameBorder="0"
                 placeholder={placeholderUlab}
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen

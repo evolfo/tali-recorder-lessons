@@ -734,7 +734,7 @@ html, body {
   color: white;
 }
 #testimonials .carousel-indicators a {
-  padding-right: 0.4rem;
+  padding-right: 1rem;
 }
 #testimonials .ui.empty.circular.label {
   width: 1.5rem;
