@@ -36,16 +36,6 @@ class BookBundle extends React.Component {
             document.querySelector(".thank-you-message").href = "https://www.talirecorderlessons.com/book-bundle-lesson"
             document.querySelector(".thank-you-message").innerHTML = "Thank you for your purchase! Click here to go to the scheduling page";
             document.querySelector(".thank-you-message").style.display = "block";
-            
-            // setTimeout(() => {
-            //     window.location.href =
-            //       "https://www.talirecorderlessons.com/book-bundle-lesson";
-            //     setTimeout(() => {
-            //         window.location.reload();
-            //     }, 200); 
-            // }, 10000)
-
-
       }
   }
 

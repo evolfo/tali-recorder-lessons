@@ -42,6 +42,13 @@ class MainHeader extends React.Component {
                 onClick={this.handleMenuItemClick}
               />
             </Link>
+            <Link to="/about">
+              <Menu.Item
+                name="about"
+                active={activeItem === "about"}
+                onClick={this.handleMenuItemClick}
+              />
+            </Link>
             <Link to="/tutorials">
               <Menu.Item
                 name="tutorials"
@@ -59,10 +66,17 @@ class MainHeader extends React.Component {
                 centered
               />
             </Link>
-            <Link to="/about">
+            <Link to="/blog">
               <Menu.Item
-                name="about"
-                active={activeItem === "about"}
+                name="blog"
+                active={activeItem === "blog"}
+                onClick={this.handleMenuItemClick}
+              />
+            </Link>
+            <Link to="/book-lesson">
+              <Menu.Item
+                name="lessons"
+                active={activeItem === "lessons"}
                 onClick={this.handleMenuItemClick}
               />
             </Link>
@@ -103,6 +117,9 @@ class MainHeader extends React.Component {
               </Link>
               <Link to="/about">
                 <DropdownItem text="About" />
+              </Link>
+              <Link to="/blog">
+                <DropdownItem text="Blog" />
               </Link>
               <Link to="/contact">
                 <DropdownItem text="Contact" />

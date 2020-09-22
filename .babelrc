@@ -16,6 +16,14 @@
     ],
     "plugins": [
         "@babel/plugin-proposal-class-properties",
-        "@babel/plugin-transform-runtime"
+        "@babel/plugin-transform-runtime",
+        ["wildcard", {"exts": [
+                "js",
+                "es6",
+                "es",
+                "jsx",
+                "md"
+            ]}
+        ]
     ]
 }

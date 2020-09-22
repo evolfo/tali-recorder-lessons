@@ -1,12 +1,12 @@
-![test image](/img/placeholder-vid.jpg "testing")
+![Tali Rubinstein](/img/blog-img/blog1.jpg "Tali Rubinstein headshot")
 
-# Test
-#### August 18, 2020
+# Tali Featured in CMUSE
+#### September 21, 2020
 
-Rerum laborum tempore voluptatum nobis. Voluptatem et nemo dolore labore iusto. Provident pariatur et pariatur sunt labore fugiat magnam. Et asperiores aut distinctio consequatur dolores exercitationem. Aut nulla doloribus fugit iure. Neque consequatur et esse dolorum non.
+Thanks a bunch to [CMUSE.org](https://www.cmuse.org/learn-recorder-lessons-online/) for choosing me to be a part of their top selection of 15 Websites To Learn Recorder Online. There are a lot of great resources there and it's an honor to be featured among them. My site is less than 6 months old at the time of writing this article, and it's great that people are finding it useful, I had no idea if anyone would ever see it!
 
-Voluptate facilis architecto reprehenderit tempora quos assumenda. Veniam qui dolore at quia. Odio enim ratione voluptas nam. Aut fuga et vel officiis debitis voluptatem assumenda. Voluptatem molestiae aliquam quod vel ut. Perferendis consequuntur eum delectus qui sit et.
+To get started with the basics, feel free to checkout my [Tutorials](https://www.talirecorderlessons.com/tutorials) page and get some short lessons on the fundamentals of the recorder. Once you feel comfortable with that material, you can [book a free trial lesson with me](https://www.talirecorderlessons.com/book-lesson) and we can work through things more in depth.
 
-Incidunt minima earum consequatur et. Sed culpa pariatur dicta et rem. Fugit quidem dolor magni officiis aut alias sed.
+I look forward to teaching you soon!
 
-Voluptatem quia laboriosam sit aut cupiditate. Et velit dolores modi non voluptatum. Deserunt doloremque et voluptates.
+~ Tali
