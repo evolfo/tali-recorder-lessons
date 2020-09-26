@@ -1,21 +1,21 @@
 {
   "name": "tali-lessons",
-  "version": "1.1.0",
+  "version": "1.0.0",
   "description": "The lesson website for world famous recorder player Tali Rubinstein",
   "main": "index.js",
   "scripts": {
     "start": "parcel index.html",
     "build": "parcel build index.html",
-    "sitemap": "babel-node sitemap-builder.js",
-    "preinstall": "npx npm-force-resolutions"
+    "sitemap": "babel-node sitemap-builder.js"
   },
   "resolutions": {
-    "browserslist": "4.14.2",
+    "browserslist": "4.14.4",
     "caniuse-lite": "1.0.30001129"
   },
   "author": "Angelo Spampinato",
   "license": "ISC",
   "dependencies": {
+    "browserslist": "^4.14.4",
     "containers": "0.0.1",
     "emailjs-com": "^2.6.3",
     "iframe-resizer-react": "^1.0.3",
