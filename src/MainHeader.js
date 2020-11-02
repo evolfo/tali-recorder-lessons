@@ -18,6 +18,13 @@ class MainHeader extends React.Component {
     this.setState({ activeItem: "home"})
   }
 
+  handleBookLessonClick = () => {
+    window.location.href = "https://www.talirecorderlessons.com/book-lesson"
+    setTimeout(() => {
+      window.location.reload();
+    }, 300) 
+  }
+
   componentDidMount() {
     const len = document.location.href.split('/').length
     const activeItem = document.location.href.split('/')[len - 1]
@@ -73,7 +80,7 @@ class MainHeader extends React.Component {
                 onClick={this.handleMenuItemClick}
               />
             </Link>
-            <Link to="/book-lesson">
+            <Link to="/book-lesson" onClick={this.handleBookLessonClick}>
               <Menu.Item
                 name="lessons"
                 active={activeItem === "lessons"}
@@ -87,7 +94,7 @@ class MainHeader extends React.Component {
                 onClick={this.handleMenuItemClick}
               />
             </Link>
-            <Link to="/book-lesson">
+            <Link to="/book-lesson" onClick={this.handleBookLessonClick}>
               <LessonButton />
             </Link>
           </div>
@@ -123,7 +130,7 @@ class MainHeader extends React.Component {
               <Link to="/contact">
                 <DropdownItem text="Contact" />
               </Link>
-              <Link to="book-lesson">
+              <Link to="/book-lesson" onClick={this.handleBookLessonClick}>
                 <DropdownItem className="timify-button" text="Book a Lesson" />
               </Link>
             </DropdownMenu>

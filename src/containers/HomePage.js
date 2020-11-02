@@ -9,6 +9,14 @@ import placeholderUlab from "../../img/placeholder-ulab.jpg";
 import placeholderNick from "../../img/placeholder-nick.jpg";
 
 class HomePage extends React.Component {
+
+  handleBookLessonClick = () => {
+    window.location.href = "https://www.talirecorderlessons.com/book-lesson"
+    setTimeout(() => {
+      window.location.reload();
+    }, 400) 
+  }
+
   render() {
     return (
       <>
@@ -29,7 +37,7 @@ class HomePage extends React.Component {
               Rubinstein will teach you&nbsp;how.
             </p>
             <p>Book a free 15 minute trial lesson now!</p>
-            <Link to="/book-lesson">
+            <Link to="/book-lesson" onClick={this.handleBookLessonClick}>
               <LessonButton />
             </Link>
           </GridColumn>

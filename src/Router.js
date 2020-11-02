@@ -8,7 +8,6 @@ import Contact from './containers/Contact';
 import Tutorials from './containers/Tutorials'
 import BlogContainer from './containers/BlogContainer';
 import BookBundle from "./components/BookBundle";
-import BookBundleLesson from "./components/BookBundleLesson";
 
 const Router = () => {
     return (
@@ -20,7 +19,6 @@ const Router = () => {
         <Route path="/contact" component={Contact} />
         <Route path="/blog" component={BlogContainer} />
         <Route exact path="/book-bundle" component={BookBundle} />
-        <Route exact path="/book-bundle-lesson" component={BookBundleLesson} />
       </Switch>
     );
 }

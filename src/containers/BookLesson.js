@@ -4,21 +4,18 @@ import { Link } from "react-router-dom";
 // import IframeResizer from "iframe-resizer-react";
 
 import recorders from "../../img/recorders.jpg";
-import BookBundleLesson from '../components/BookBundleLesson';
 
-// This is a class to use ComponentDidMount for a loading of a script for the booking embed
 class BookLesson extends React.Component {
-
-  // This is for using CanUMeet
-  // const resizeIframe = (e) => {
-  //   const iframe = document.querySelector('iframe')
-  // }
-
   state = {
-    script: ""
+    script: "",
+    pageHasBeenRefreshed: false
   }
 
   componentDidMount = () => {
+    this.setUpAppointletModal()
+  }
+
+  setUpAppointletModal = (e) => {
     const script = document.createElement("script");
 
     script.src = "https://www.appointletcdn.com/loader/loader.min.js";
@@ -34,7 +31,7 @@ class BookLesson extends React.Component {
     window.location.href = "https://www.talirecorderlessons.com/book-bundle"
     setTimeout(() => {
       window.location.reload();
-    }, 200) 
+    }, 300) 
   } 
 
   render() {
@@ -43,16 +40,6 @@ class BookLesson extends React.Component {
         <GridRow columns={2}>
           <div className="booking-container">
             <GridColumn>
-              {/* <div className="booking-iframe-container">
-                    <iframe
-                      onClick={resizeIframe}
-                      src="https://www.canumeet.com/talirecorderlessons"
-                      width="100%"
-                      height="100vh"
-                      scrolling="no"
-                    />
-                  </div> */}
-
               <Card
                 fluid={true}
                 data-appointlet-organization="tali-recorder-lessons"
